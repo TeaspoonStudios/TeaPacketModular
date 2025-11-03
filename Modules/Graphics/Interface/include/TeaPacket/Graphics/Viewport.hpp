@@ -1,6 +1,6 @@
 #pragma once
 #include <memory>
-#include "TeaPacket/Graphics/Texture.hpp"
+#include "TeaPacket/Graphics/Texture/Texture.hpp"
 
 namespace TeaPacket::Graphics
 {

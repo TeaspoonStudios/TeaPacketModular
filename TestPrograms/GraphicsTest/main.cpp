@@ -4,7 +4,7 @@
 #include "TeaPacket/Graphics/Display.hpp"
 #include "TeaPacket/Graphics/DisplayParameters.hpp"
 #include "TeaPacket/Graphics/Graphics.hpp"
-#include "TeaPacket/Graphics/TextureData.hpp"
+#include "TeaPacket/Graphics/Texture/TextureData.hpp"
 #include "TeaPacket/System/System.hpp"
 
 using namespace TeaPacket::Window;

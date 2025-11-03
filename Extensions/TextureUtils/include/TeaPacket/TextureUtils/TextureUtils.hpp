@@ -1,7 +1,7 @@
 #pragma once
 
 #include "TeaPacket/Math/Color.hpp"
-#include "TeaPacket/Graphics/TextureFormat.hpp"
+#include "TeaPacket/Graphics/Texture/TextureFormat.hpp"
 #include "TeaPacket/Types/Memory/FixedArray.hpp"
 
 #define TP_TexUtilsParams \

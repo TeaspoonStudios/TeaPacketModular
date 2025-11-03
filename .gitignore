@@ -1044,5 +1044,7 @@ dkms.conf
 # Raspberry Pi Pico disassembler file
 *.dis
 
+# Build folders
 build/*
+# Any TeaPacket generated headers
 *.gen

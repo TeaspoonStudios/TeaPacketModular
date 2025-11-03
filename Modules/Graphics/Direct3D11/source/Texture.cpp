@@ -1,15 +1,15 @@
-#include "TeaPacket/Graphics/Texture.hpp"
+#include "TeaPacket/Graphics/Texture/Texture.hpp"
 
 #include <d3d11.h>
 #include <numeric>
 
-#include "TeaPacket/Graphics/TextureParameters.hpp"
+#include "TeaPacket/Graphics/Texture/TextureParameters.hpp"
 #include "TeaPacket/Graphics/PlatformTexture.hpp"
-#include "TeaPacket/Graphics/TextureFormat.hpp"
+#include "TeaPacket/Graphics/Texture/TextureFormat.hpp"
 #include "TeaPacket/Graphics/WindowsGraphics.hpp"
 #include "TeaPacket/MacroUtils/StructUtils.hpp"
 #include "TeaPacket/MacroUtils/WindowsSpecific.hpp"
-#include "TeaPacket/Graphics/TextureData.hpp"
+#include "TeaPacket/Graphics/Texture/TextureData.hpp"
 
 #include "TeaPacket/Graphics/D3D11/D3D11TextureFormat.gen"
 

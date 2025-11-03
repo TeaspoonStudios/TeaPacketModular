@@ -2,7 +2,7 @@
 
 #include "TeaPacket/Types/Memory/FixedArray.hpp"
 #include "TeaPacket/Math/Color.hpp"
-#include "TeaPacket/Graphics/TextureFormat.hpp"
+#include "TeaPacket/Graphics/Texture/TextureFormat.hpp"
 
 namespace TeaPacket::Graphics
 {

@@ -9,7 +9,7 @@
 
 #include "TeaPacket/Graphics/DisplayParameters.hpp"
 #include "TeaPacket/Graphics/Graphics.hpp"
-#include "TeaPacket/Graphics/TextureData.hpp"
+#include "TeaPacket/Graphics/Texture/TextureData.hpp"
 
 using namespace TeaPacket::Graphics;
 
