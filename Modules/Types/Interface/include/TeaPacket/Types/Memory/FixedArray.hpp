@@ -66,5 +66,16 @@ namespace TeaPacket
             std::swap(src.data, data);
             return *this;
         }
+
+        typedef T* iterator;
+        typedef const T* const_iterator;
+
+        // ITERATORS
+        iterator begin() { return data; }
+        iterator end() { return &data[size]; }
+        const_iterator begin() const { return data; }
+        const_iterator end() const { return &data[size]; }
+        const_iterator cbegin() const { return data; }
+        const_iterator cend() const { return &data[size]; }
     };
 }
