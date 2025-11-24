@@ -12,19 +12,34 @@
 #include "TeaPacket/System/System.hpp"
 #include "TeaPacket/Types/Enums/PrimitiveTypes.hpp"
 #include "TeaPacket/Assets/ReadAsset.hpp"
+#include "TeaPacket/Graphics/Texture/TextureParameters.hpp"
 
 using namespace TeaPacket;
 using namespace TeaPacket::Window;
 using namespace TeaPacket::Graphics;
 
 constexpr float vertData[] = {
-    0.0f, 1.0f,
-    1.0f,-1.0f,
-    -1.0f,-1.0f
+    -1.0f, 1.0f, 0.0f, 0.0f, 
+     1.0f, 1.0f, 1.0f, 0.0f,
+    -1.0f,-1.0f, 0.0f, 1.0f,
+     1.0f,-1.0f, 1.0f, 1.0f
 };
 
 unsigned long faceData[] = {
-    0, 1, 2
+    0, 1, 2,
+    1, 3, 2
+};
+
+unsigned char texData[] = {
+    255, 0, 0, 255,
+    0, 255, 0, 255,
+    0, 0, 255, 255,
+    255, 255, 0, 255,
+    0, 255, 255, 255,
+    255, 0, 255, 255,
+    0, 0, 0, 255,
+    128, 128, 128, 255,
+    255, 255, 255, 255
 };
 
 [[noreturn]] int main()
@@ -34,26 +49,25 @@ unsigned long faceData[] = {
     Display::InitializeDefaultDisplays({dispParams});
     Viewport* viewport = Display::GetDisplay(0)->GetViewport();
 
-    auto vertInfo = std::vector<VertexDataInfo>(1);
+    auto vertInfo = std::vector<VertexDataInfo>(2);
     vertInfo[0].size = 2;
     vertInfo[0].type = PrimitiveType::Float;
+    vertInfo[1].size = 2;
+    vertInfo[1].type = PrimitiveType::Float;
     
     const auto meshParms = MeshParameters{
         .flags = MeshFlags{.useIndices = true},
         .vertexData = BorrowedFixedArray((void*)vertData, sizeof(vertData)),
         .vertexInfo = vertInfo,
-        .indices = BorrowedFixedArray(faceData, 3)
+        .indices = BorrowedFixedArray(faceData, std::size(faceData))
     };
     auto mesh = Mesh(meshParms);
 
-    auto inputAttrs = std::vector<ShaderVariableType>(1);
+    auto inputAttrs = std::vector<ShaderVariableType>(2);
     inputAttrs[0].baseType = ShaderVariableBaseType::Float;
     inputAttrs[0].amount = 2;
-    /*FixedArray<FixedArray<ShaderVariableType>> uniform{
-        {
-            ShaderVariableType(ShaderVariableBaseType::Float, 4),
-            ShaderVariableType(ShaderVariableBaseType::Float, 2)
-        } };*/
+    inputAttrs[1].baseType = ShaderVariableBaseType::Float;
+    inputAttrs[1].amount = 2;
     
     const auto shaderParms = ShaderParameters{
         .flags = {},
@@ -65,6 +79,22 @@ unsigned long faceData[] = {
     auto shader = Shader(shaderParms);
     constexpr float data[] = {0, 1, 0, 1};
     shader.SendUniformBuffer((unsigned char*)data, 0);
+
+    const auto texParms = TextureParameters{
+        .data = texData,
+        .width = 3,
+        .height = 3,
+        .format = TextureFormat::RGBA8,
+        .useFlags = TextureUseFlags{
+            .shaderResource = true,
+            .renderTargetColor = false,
+            .renderTargetDepth = false,
+            .writeMode = TextureAvailableMode::None,
+            .cpuReadable = false
+        }
+    };
+    auto tex = Texture(texParms);
+    tex.SetActive(1);
     
     while (true)
     {
@@ -79,12 +109,6 @@ unsigned long faceData[] = {
         viewport->FinishRender();
         static int number = 0;
         number++;
-        if (number == 0)
-        {
-            auto texData = viewport->GetTexture()->GetData();
-            const Color rgb = texData.GetColor4(1,1);
-            std::cout << static_cast<std::string>(rgb);
-        }
     }
     DeInitialize();
 }

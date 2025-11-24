@@ -20,9 +20,13 @@ namespace TeaPacket::Graphics
         ~Texture();
 
         [[nodiscard]] TextureData GetData() const;
+        void SetActive(uint8_t index);
     private:
 
         uint16_t width, height;
         TextureFormat format;
+
+    public:
+        
     };
 }

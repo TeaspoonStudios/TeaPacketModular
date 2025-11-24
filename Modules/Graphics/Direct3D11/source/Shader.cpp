@@ -28,7 +28,6 @@ static constexpr DXGI_FORMAT GetDXGIFormatFromVertexAttribute(ShaderVariableType
     case Float:     return DXGI_FORMAT_R32_FLOAT;
     case Int:       return DXGI_FORMAT_R32_SINT;
     case UInt:      return DXGI_FORMAT_R32_UINT;
-    case Texture:   return DXGI_FORMAT_UNKNOWN;
         }
     case 2:
         switch (shaderVarType.baseType)
@@ -36,7 +35,6 @@ static constexpr DXGI_FORMAT GetDXGIFormatFromVertexAttribute(ShaderVariableType
     case Float: return DXGI_FORMAT_R32G32_FLOAT;
     case Int: return DXGI_FORMAT_R32G32_SINT;
     case UInt: return DXGI_FORMAT_R32G32_UINT;
-    case Texture: return DXGI_FORMAT_UNKNOWN;
         }
     case 3:
         switch (shaderVarType.baseType)
@@ -44,7 +42,6 @@ static constexpr DXGI_FORMAT GetDXGIFormatFromVertexAttribute(ShaderVariableType
     case Float: return DXGI_FORMAT_R32G32B32_FLOAT;
     case Int: return DXGI_FORMAT_R32G32B32_SINT;
     case UInt: return DXGI_FORMAT_R32G32B32_UINT;
-    case Texture: return DXGI_FORMAT_UNKNOWN;
         }
     case 4:
         switch (shaderVarType.baseType)
@@ -52,7 +49,6 @@ static constexpr DXGI_FORMAT GetDXGIFormatFromVertexAttribute(ShaderVariableType
     case Float: return DXGI_FORMAT_R32G32B32A32_FLOAT;
     case Int: return DXGI_FORMAT_R32G32B32A32_SINT;
     case UInt: return DXGI_FORMAT_R32G32B32A32_UINT;
-    case Texture: return DXGI_FORMAT_UNKNOWN;
         }
     default: throw std::exception();
     }

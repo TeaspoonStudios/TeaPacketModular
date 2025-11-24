@@ -9,7 +9,6 @@ namespace TeaPacket::Graphics
         Float,  ///< Single-precision float
         Int,    ///< Signed Integer
         UInt,    ///< Unsigned Integer
-        Texture, ///< Texture/Sampler.
     };
 
     union ShaderVariableValue
@@ -17,7 +16,6 @@ namespace TeaPacket::Graphics
         float f;
         signed int i;
         unsigned int ui;
-        Texture* tex;
     };
 
     struct ShaderVariableType
@@ -27,5 +25,8 @@ namespace TeaPacket::Graphics
 
         constexpr ShaderVariableType():baseType(static_cast<ShaderVariableBaseType>(0)), amount(0) {}
         constexpr ShaderVariableType(const ShaderVariableBaseType type, const unsigned char amount) : baseType(type), amount(amount){}
+
+        constexpr size_t GetSize() const;
     };
+    
 }

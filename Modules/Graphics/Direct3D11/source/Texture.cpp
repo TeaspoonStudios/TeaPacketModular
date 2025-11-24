@@ -65,11 +65,15 @@ format(parameters.format)
     textureDesc.CPUAccessFlags = GetD3DCpuAccessFlags(parameters.useFlags);
     textureDesc.MiscFlags = 0;
 
-
+    D3D11_SUBRESOURCE_DATA texData = {
+        .pSysMem = parameters.data,
+        .SysMemPitch = static_cast<UINT>(width) * GetTextureFormatBytesPerPixel(format),
+        .SysMemSlicePitch = 0
+    };
 
     CheckErrorWinCom(
         device->CreateTexture2D(&textureDesc,
-            static_cast<D3D11_SUBRESOURCE_DATA*>(parameters.data), platformTexture->texture2D.GetAddressOf())
+            parameters.data == nullptr ? nullptr : &texData, platformTexture->texture2D.GetAddressOf())
     );
 
     if (parameters.data == nullptr)
@@ -154,4 +158,10 @@ TextureData Texture::GetData() const
     }
     deviceContext->Unmap(stagingTex.Get(),0);
     return data;
+}
+
+void Texture::SetActive(const uint8_t index)
+{
+    deviceContext->PSSetShaderResources(index, 1, platformTexture->shaderResourceView.GetAddressOf());
+    deviceContext->PSSetSamplers(index, 1, platformTexture->samplerState.GetAddressOf());
 }
