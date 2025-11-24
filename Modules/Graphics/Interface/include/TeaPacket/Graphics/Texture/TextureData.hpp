@@ -1,6 +1,5 @@
 #pragma once
 
-#include "TeaPacket/Types/Memory/FixedArray.hpp"
 #include "TeaPacket/Math/Color.hpp"
 #include "TeaPacket/Graphics/Texture/TextureFormat.hpp"
 
@@ -10,7 +9,7 @@ namespace TeaPacket::Graphics
     class TextureData
     {
     public:
-        FixedArray<unsigned char> data;
+        std::vector<unsigned char> data;
         uint16_t pitch = 0;
 
         uint16_t width = 0;
@@ -18,14 +17,15 @@ namespace TeaPacket::Graphics
 
         TextureFormat format;
 
-        explicit TextureData(const size_t dataSize) :
-            data(dataSize), format()
+        explicit TextureData(const size_t dataSize = 0) :
+            format()
         {
+            data.reserve(dataSize);
         }
 
-        Color GetColor4(const uint16_t x, const uint16_t y)
+        [[nodiscard]] Color GetColor4(const uint16_t x, const uint16_t y) const
         {
-            unsigned char* p = &data[y * pitch + x * GetTextureFormatBytesPerPixel(format)];
+            const unsigned char* p = &data[y * pitch + x * GetTextureFormatBytesPerPixel(format)];
             switch (format)
             {
                 using enum TextureFormat;

@@ -1,11 +1,7 @@
 #pragma once
-#include <cstdint>
-#include <optional>
 #include <string>
 
 #include "TeaPacket/Graphics/Shader/ShaderVariable.hpp"
-#include "TeaPacket/Types/Memory/FixedArray.hpp"
-#include "TeaPacket/Types/Memory/BorrowedFixedArray.hpp"
 
 namespace TeaPacket
 {
@@ -23,11 +19,12 @@ namespace TeaPacket::Graphics
         
     };
 
+
     struct ShaderParameters
     {
         ShaderFlags flags;
         const std::string& vertexShaderCode, fragmentShaderCode;
-        FixedArray<ShaderVariableType>& inputAttributes;
-        std::optional<FixedArray<ShaderVariableType>*> uniforms;
+        std::vector<ShaderVariableType>& inputAttributes;
+        std::vector<size_t> uniformBufferSizes;
     };
 }

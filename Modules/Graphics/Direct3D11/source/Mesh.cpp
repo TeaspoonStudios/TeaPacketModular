@@ -20,7 +20,7 @@ Mesh::Mesh(const MeshParameters& parameters):
     {
         vertexSize += SizeOfPrimitiveType(vertexData.type) * vertexData.size;
     }
-    platformMesh->vertexSize = (UINT)vertexSize;
+    platformMesh->vertexSize = static_cast<UINT>(vertexSize);
 
     D3D11_BUFFER_DESC vertexBufferDesc;
     D3D11_SUBRESOURCE_DATA d3dVertexData;
@@ -46,7 +46,7 @@ Mesh::Mesh(const MeshParameters& parameters):
 
         D3D11_BUFFER_DESC indexBufferDesc;
         indexBufferDesc.Usage = D3D11_USAGE_DEFAULT;
-        indexBufferDesc.ByteWidth = (UINT)parameters.indices->SizeOf();
+        indexBufferDesc.ByteWidth = static_cast<UINT>(parameters.indices->SizeOf());
         indexBufferDesc.BindFlags = D3D11_BIND_INDEX_BUFFER;
         indexBufferDesc.CPUAccessFlags = 0;
         indexBufferDesc.MiscFlags = 0;
@@ -61,7 +61,7 @@ Mesh::Mesh(const MeshParameters& parameters):
             device->CreateBuffer(&indexBufferDesc, &d3dIndexData, platformMesh->indexBuffer.GetAddressOf())
         );
 
-        platformMesh->indexCount = (UINT)parameters.indices->size;
+        platformMesh->indexCount = static_cast<UINT>(parameters.indices->size);
     }
 }
 
@@ -69,7 +69,7 @@ void Mesh::SetActive()
 {
     activeMesh = this;
 
-    const unsigned int offset = 0;
+    constexpr unsigned int offset = 0;
     deviceContext->IASetVertexBuffers(0, 1, platformMesh->vertexBuffer.GetAddressOf(), &platformMesh->vertexSize, &offset);
     if (hasIndex)
     {

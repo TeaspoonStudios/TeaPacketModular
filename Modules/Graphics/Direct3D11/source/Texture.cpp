@@ -146,10 +146,11 @@ TextureData Texture::GetData() const
     data.format = D3DToTextureFormat(stagingDesc.Format);
     data.pitch = static_cast<uint16_t>(mappedResource.RowPitch);
 
+    unsigned char* srcBeg;
     for (uint_fast16_t y = 0; y < h; y++)
     {
-        memcpy(data.data.data + y * mappedResource.RowPitch,
-            static_cast<unsigned char*>(mappedResource.pData) + mappedResource.RowPitch * y, mappedResource.RowPitch);
+        srcBeg = static_cast<unsigned char*>(mappedResource.pData) + mappedResource.RowPitch * y;
+        data.data.insert(data.data.end(), srcBeg, srcBeg + mappedResource.RowPitch);
     }
     deviceContext->Unmap(stagingTex.Get(),0);
     return data;

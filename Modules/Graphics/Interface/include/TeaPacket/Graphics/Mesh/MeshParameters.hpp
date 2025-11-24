@@ -1,7 +1,6 @@
 #pragma once
 #include <cstdint>
 #include <optional>
-#include "TeaPacket/Types/Memory/FixedArray.hpp"
 #include "TeaPacket/Types/Memory/BorrowedFixedArray.hpp"
 
 namespace TeaPacket
@@ -26,7 +25,7 @@ namespace TeaPacket::Graphics
     {
         MeshFlags flags;
         BorrowedFixedArray<void> vertexData;
-        FixedArray<VertexDataInfo> vertexInfo;
+        std::vector<VertexDataInfo> vertexInfo;
         std::optional<BorrowedFixedArray<unsigned long>> indices;
     };
 }

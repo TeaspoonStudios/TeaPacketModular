@@ -1,7 +1,6 @@
 #pragma once
 #include <memory>
-
-#include "TeaPacket/Types/Memory/FixedArray.hpp"
+#include <vector>
 
 namespace TeaPacket::Graphics
 {
@@ -20,7 +19,7 @@ namespace TeaPacket::Graphics
         static inline Mesh* activeMesh = nullptr;
 
     private:
-        FixedArray<VertexDataInfo> vertexDataInfo;
+        std::vector<VertexDataInfo> vertexDataInfo;
         
     public:
         explicit Mesh(const MeshParameters& parameters);

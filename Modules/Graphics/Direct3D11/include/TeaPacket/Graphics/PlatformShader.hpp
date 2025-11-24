@@ -12,5 +12,7 @@ namespace TeaPacket::Graphics
         Microsoft::WRL::ComPtr<ID3D11PixelShader> pixelShader;
 
         Microsoft::WRL::ComPtr<ID3D11InputLayout> inputLayout;
+
+        std::vector<Microsoft::WRL::ComPtr<ID3D11Buffer>> cbuffers;
     };
 }

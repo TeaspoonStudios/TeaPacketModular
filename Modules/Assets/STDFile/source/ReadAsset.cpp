@@ -1,6 +1,8 @@
 #include "TeaPacket/Assets/ReadAsset.hpp"
 
+#include <cassert>
 #include <fstream>
+#include <filesystem>
 
 using namespace TeaPacket;
 
@@ -13,6 +15,10 @@ std::string Assets::ReadTextFile(const std::string& assetPath)
     assetSource += assetPath;
     
     std::ifstream in(assetSource);
+    if (!in.is_open())
+    {
+        throw std::runtime_error(assetPath + " does not exist!");
+    }
     
     in.seekg(0, std::ios::end);
     const size_t size = in.tellg();

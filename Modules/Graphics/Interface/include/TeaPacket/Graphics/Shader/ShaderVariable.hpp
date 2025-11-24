@@ -28,10 +28,4 @@ namespace TeaPacket::Graphics
         constexpr ShaderVariableType():baseType(static_cast<ShaderVariableBaseType>(0)), amount(0) {}
         constexpr ShaderVariableType(const ShaderVariableBaseType type, const unsigned char amount) : baseType(type), amount(amount){}
     };
-
-    struct ShaderVariable
-    {
-        ShaderVariableType type;
-        ShaderVariableValue value;
-    };
 }

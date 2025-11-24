@@ -34,7 +34,7 @@ unsigned long faceData[] = {
     Display::InitializeDefaultDisplays({dispParams});
     Viewport* viewport = Display::GetDisplay(0)->GetViewport();
 
-    auto vertInfo = FixedArray<VertexDataInfo>(1);
+    auto vertInfo = std::vector<VertexDataInfo>(1);
     vertInfo[0].size = 2;
     vertInfo[0].type = PrimitiveType::Float;
     
@@ -46,19 +46,25 @@ unsigned long faceData[] = {
     };
     auto mesh = Mesh(meshParms);
 
-    auto inputAttrs = FixedArray<ShaderVariableType>(1);
+    auto inputAttrs = std::vector<ShaderVariableType>(1);
     inputAttrs[0].baseType = ShaderVariableBaseType::Float;
     inputAttrs[0].amount = 2;
-    auto uniform = FixedArray<ShaderVariableType>(0);
+    /*FixedArray<FixedArray<ShaderVariableType>> uniform{
+        {
+            ShaderVariableType(ShaderVariableBaseType::Float, 4),
+            ShaderVariableType(ShaderVariableBaseType::Float, 2)
+        } };*/
     
     const auto shaderParms = ShaderParameters{
         .flags = {},
         .vertexShaderCode = Assets::ReadTextFile("test.vert"),
         .fragmentShaderCode = Assets::ReadTextFile("test.frag"),
         .inputAttributes = inputAttrs,
-        .uniforms = std::nullopt
+        .uniformBufferSizes = {16}
     };
     auto shader = Shader(shaderParms);
+    constexpr float data[] = {0, 1, 0, 1};
+    shader.SendUniformBuffer((unsigned char*)data, 0);
     
     while (true)
     {

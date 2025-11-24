@@ -1,8 +1,7 @@
 #pragma once
+#include <vector>
 #include <memory>
 
-#include "TeaPacket/Types/Memory/FixedArray.hpp"
-#include "TeaPacket/Graphics/Shader/ShaderVariable.hpp"
 
 namespace TeaPacket::Graphics
 {
@@ -12,21 +11,24 @@ namespace TeaPacket::Graphics
 
     class Shader
     {
-    public:
+    public: // Member Variables
 
         std::unique_ptr<PlatformShader> platformShader;
-        const bool hasIndex : 1 = false;
-        //FixedArray<ShaderVariable> uniformVariables;
-
-    public:
-        static inline Shader* activeShader = nullptr;
-
     private:
+        std::vector<size_t> uniformBufferSizes{};
         
-    public:
+    public: // Static Variables
+        static inline Shader* activeShader = nullptr;
+    
+        
+    public: // Member Functions
         explicit Shader(const ShaderParameters& parameters);
         ~Shader();
 
+        void SendUniformBuffer(const unsigned char* data, size_t bufferIndex);
+
         void SetActive();
+
+    public: // Static Functions
     };
 }
