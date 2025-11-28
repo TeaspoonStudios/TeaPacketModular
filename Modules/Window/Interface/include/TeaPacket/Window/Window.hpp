@@ -1,7 +1,7 @@
 #pragma once
 
-#include <assert.h>
 #include <memory>
+#include <string>
 #include <vector>
 
 #include "TeaPacket/Window/WindowParameters.hpp"
