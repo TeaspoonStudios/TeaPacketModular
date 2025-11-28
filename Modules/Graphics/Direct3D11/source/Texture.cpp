@@ -1,7 +1,6 @@
 #include "TeaPacket/Graphics/Texture/Texture.hpp"
 
 #include <d3d11.h>
-#include <numeric>
 
 #include "TeaPacket/Graphics/Texture/TextureParameters.hpp"
 #include "TeaPacket/Graphics/PlatformTexture.hpp"
@@ -12,6 +11,8 @@
 #include "TeaPacket/Graphics/Texture/TextureData.hpp"
 
 #include "TeaPacket/Graphics/D3D11/D3D11TextureFormat.gen"
+#include "TeaPacket/Graphics/D3D11/D3D11TextureFilter.gen"
+#include "TeaPacket/Graphics/D3D11/D3D11TextureWrap.gen"
 
 using namespace TeaPacket::Graphics;
 
@@ -96,8 +97,8 @@ format(parameters.format)
         deviceContext->GenerateMips(platformTexture->shaderResourceView.Get());
 
         D3D11_SAMPLER_DESC samplerDesc;
-        samplerDesc.Filter = D3D11_FILTER_MIN_MAG_MIP_POINT;
-        constexpr D3D11_TEXTURE_ADDRESS_MODE d3dWrapType = D3D11_TEXTURE_ADDRESS_WRAP;
+        samplerDesc.Filter = TextureFilterModeToD3D(parameters.filterMode);
+        D3D11_TEXTURE_ADDRESS_MODE d3dWrapType = TextureWrapModeToD3D(parameters.wrapMode);
         samplerDesc.AddressU = d3dWrapType;
         samplerDesc.AddressV = d3dWrapType;
         samplerDesc.AddressW = d3dWrapType;

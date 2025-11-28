@@ -21,6 +21,17 @@ namespace TeaPacket::Graphics
         bool cpuReadable : 1 = false;
     };
 
+    enum class TextureFilterMode : unsigned char{
+        Nearest,
+        Linear
+    };
+
+    enum class TextureWrapMode : unsigned char {
+        Wrap,
+        Clamp,
+        Mirror
+    };
+
     struct TextureParameters
     {
         void* data;
@@ -28,5 +39,7 @@ namespace TeaPacket::Graphics
         uint16_t height;
         TextureFormat format;
         TextureUseFlags useFlags;
+        TextureFilterMode filterMode;
+        TextureWrapMode wrapMode;
     };
 }

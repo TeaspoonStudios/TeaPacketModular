@@ -20,9 +20,9 @@ using namespace TeaPacket::Graphics;
 
 constexpr float vertData[] = {
     -1.0f, 1.0f, 0.0f, 0.0f, 
-     1.0f, 1.0f, 1.0f, 0.0f,
-    -1.0f,-1.0f, 0.0f, 1.0f,
-     1.0f,-1.0f, 1.0f, 1.0f
+     1.0f, 1.0f, 2.0f, 0.0f,
+    -1.0f,-1.0f, 0.0f, 2.0f,
+     1.0f,-1.0f, 2.0f, 2.0f
 };
 
 unsigned long faceData[] = {
@@ -91,7 +91,9 @@ unsigned char texData[] = {
             .renderTargetDepth = false,
             .writeMode = TextureAvailableMode::None,
             .cpuReadable = false
-        }
+        },
+        .filterMode = TextureFilterMode::Linear,
+        .wrapMode = TextureWrapMode::Wrap
     };
     auto tex = Texture(texParms);
     tex.SetActive(1);
