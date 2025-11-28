@@ -15,8 +15,9 @@ def configure(teapacket_root):
     import_module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(import_module)
     print(os.getcwd())
-    import_module.generate(os.getcwd() + "/generators/Texture.map")
-
+    import_module.generate(os.getcwd() + "/generators/Texture.gmap")
+    import_module.generate(os.getcwd() + "/generators/TextureFilter.gmap")
+    import_module.generate(os.getcwd() + "/generators/TextureWrap.gmap")
 
     AssetMixer.setup.setup()
 
