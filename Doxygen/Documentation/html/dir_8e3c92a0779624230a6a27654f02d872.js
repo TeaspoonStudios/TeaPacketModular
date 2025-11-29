@@ -1,4 +1,0 @@
-var dir_8e3c92a0779624230a6a27654f02d872 =
-[
-    [ "TeaPacket", "dir_0473f7d63fa836def926a9e2884449c4.html", "dir_0473f7d63fa836def926a9e2884449c4" ]
-];
