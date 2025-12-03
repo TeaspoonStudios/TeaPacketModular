@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.31)
+cmake_minimum_required(VERSION 3.28)
 project(TeaPacket_Graphics_Base)
 
 include("${TEAPACKET_ROOT}/CMakeCommons/CommonFunctions.CMake")

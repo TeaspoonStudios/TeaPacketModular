@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.31)
+cmake_minimum_required(VERSION 3.28)
 project(TeaPacket_Window_Base)
 
 TP_add_interface_subdirectory(MacroUtils)

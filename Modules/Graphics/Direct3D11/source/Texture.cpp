@@ -1,6 +1,7 @@
 #include "TeaPacket/Graphics/Texture/Texture.hpp"
 
 #include <d3d11.h>
+#include <cassert>
 
 #include "TeaPacket/Graphics/Texture/TextureParameters.hpp"
 #include "TeaPacket/Graphics/PlatformTexture.hpp"

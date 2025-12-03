@@ -5,6 +5,7 @@
 
 #include <d3d11.h>
 #include <iostream>
+#include <cassert>
 
 #include "TeaPacket/Graphics/Display.hpp"
 #include "TeaPacket/Graphics/PlatformDisplay.hpp"

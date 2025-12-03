@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.31)
+cmake_minimum_required(VERSION 3.28)
 project(TeaPacket_Tests_Graphics_${TP_TEST_IMPL})
 include("${TEAPACKET_ROOT}/CMakeCommons/CommonTest.CMake")
 include("${TEAPACKET_ROOT}/CMakeCommons/CommonFunctions.CMake")

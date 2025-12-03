@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.31)
+cmake_minimum_required(VERSION 3.28)
 project(TeaPacket_TestPrograms_Assets)
 include("${TEAPACKET_ROOT}/CMakeCommons/CommonFunctions.CMake")
 

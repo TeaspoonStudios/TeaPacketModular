@@ -2,6 +2,7 @@
 #include "TeaPacket/Graphics/PlatformMesh.hpp"
 
 #include <d3d11.h>
+#include <cassert>
 
 #include "TeaPacket/Graphics/WindowsGraphics.hpp"
 #include "TeaPacket/Graphics/Mesh/MeshParameters.hpp"

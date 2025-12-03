@@ -4,6 +4,14 @@
 
 namespace TeaPacket
 {
+    namespace Logging
+    {
+        /// Initialize the logging system
+        void Initialize();
+        /// De-Initialize and cleanup the logging system.
+        void DeInitialize();
+    }
+    
     /// Logs a string to an implementation-defined location.
     void LogString(const std::string& msg);
 
