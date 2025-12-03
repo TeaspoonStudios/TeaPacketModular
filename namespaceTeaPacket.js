@@ -4,6 +4,10 @@ var namespaceTeaPacket =
       [ "ReadTextFile", "namespaceTeaPacket_1_1Assets.html#a651e00dcf9d0d06e6f4d4c0a0081b23d", null ]
     ] ],
     [ "Graphics", "namespaceTeaPacket_1_1Graphics.html", "namespaceTeaPacket_1_1Graphics" ],
+    [ "Logging", "namespaceTeaPacket_1_1Logging.html", [
+      [ "DeInitialize", "namespaceTeaPacket_1_1Logging.html#a596467eb095d1dc189fd48b1f11680b0", null ],
+      [ "Initialize", "namespaceTeaPacket_1_1Logging.html#a646a90b28a64430eba93e4d37c10dbaa", null ]
+    ] ],
     [ "Math", "namespaceTeaPacket_1_1Math.html", "namespaceTeaPacket_1_1Math" ],
     [ "System", "namespaceTeaPacket_1_1System.html", [
       [ "DeInitialize", "namespaceTeaPacket_1_1System.html#a6b2dc805bbb7b89bc88e98c29c949f4c", null ],
