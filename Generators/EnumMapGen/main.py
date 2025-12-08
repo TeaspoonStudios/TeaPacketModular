@@ -1,11 +1,9 @@
-import os, pathlib
+import os, pathlib, sys
 
-from enum import Enum
-
-class EnumDataList():
+class EnumDataList:
     typ : str = "data"
 
-class enum_def():
+class EnumDef:
     is_class : bool = False
     name : str = ""
     alias : str = ""
@@ -29,7 +27,7 @@ def generate(file):
             # END COMMAND
             if command == "end":
                 
-                data = submode_stack.pop()
+                submode_stack.pop()
                 continue
 
             # PROCESS SUBMODES
@@ -46,7 +44,7 @@ def generate(file):
             elif command == "headers":
                 headers = set(words[1:])
             elif command == "enum":
-                enumclass = enum_def()
+                enumclass = EnumDef()
                 ptr = 1
                 if words[1].lower() == "class":
                     ptr = 2
@@ -64,7 +62,7 @@ def generate(file):
             elif command == "error":
                 error_message = " ".join(words[1:])
             
-    if(dest_file == ""):
+    if dest_file == "":
         print("NO DESTINATION FILE SET FOR " + file + " MAPGEN")
         return
 
@@ -102,3 +100,6 @@ def generate(file):
 
                 genfile.write(" }\n")
                 genfile.write("}\n")
+
+if __name__ == "__main__":
+    generate(sys.argv[1])

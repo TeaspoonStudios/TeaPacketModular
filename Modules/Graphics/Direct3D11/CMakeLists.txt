@@ -12,9 +12,17 @@ add_subdirectory_no_overwrite(TeaPacket_MacroUtils_WinSpecific "${TEAPACKET_ROOT
 TP_add_impl_subdirectory(Window Windows)
 TP_add_impl_subdirectory(Logging STDIO)
 
+
 file(GLOB_RECURSE sources source/*.c*)
 
 add_library(TeaPacket_Graphics_Direct3D11 STATIC ${sources})
+
+include("${TEAPACKET_ROOT}/Generators/EnumMapGen/Functions.CMake")
+
+TP_EnumMapGen("${CMAKE_CURRENT_SOURCE_DIR}/generators/Texture.gmap" TeaPacket_Graphics_Direct3D11)
+TP_EnumMapGen("${CMAKE_CURRENT_SOURCE_DIR}/generators/TextureFilter.gmap" TeaPacket_Graphics_Direct3D11)
+TP_EnumMapGen("${CMAKE_CURRENT_SOURCE_DIR}/generators/TextureWrap.gmap" TeaPacket_Graphics_Direct3D11)
+
 target_include_directories(TeaPacket_Graphics_Direct3D11 PRIVATE source)
 target_include_directories(TeaPacket_Graphics_Direct3D11 PUBLIC include)
 target_link_libraries(TeaPacket_Graphics_Direct3D11 TeaPacket_Graphics_Base

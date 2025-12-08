@@ -92,7 +92,7 @@ unsigned char texData[] = {
             .writeMode = TextureAvailableMode::None,
             .cpuReadable = false
         },
-        .filterMode = TextureFilterMode::Linear,
+        .filterMode = TextureFilterMode::Nearest,
         .wrapMode = TextureWrapMode::Wrap
     };
     auto tex = Texture(texParms);

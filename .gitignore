@@ -1058,3 +1058,4 @@ external_tools/*
 
 # CLION SHUT UP
 ./.idea/.name
+generated

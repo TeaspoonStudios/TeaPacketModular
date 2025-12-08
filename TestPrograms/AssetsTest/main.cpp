@@ -1,11 +1,17 @@
 #include <iostream>
 
 #include "TeaPacket/Assets/ReadAsset.hpp"
+#include "TeaPacket/System/System.hpp"
+#include "TeaPacket/Logging/Logging.hpp"
 
-using namespace TeaPacket::Assets;
+using namespace TeaPacket;
 
 [[noreturn]] int main()
 {
-    std::cout << ReadTextFile("test.txt") << std::endl;
-    std::cout << ReadTextFile("dir/test2.txt") << std::endl;
+    System::Initialize();
+    
+    LogString(Assets::ReadTextFile("test.txt"));
+    LogString(Assets::ReadTextFile("dir/test2.txt");
+
+    System::DeInitialize();
 }
