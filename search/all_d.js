@@ -7,7 +7,7 @@ var searchData=
   ['platformtexture_4',['platformTexture',['../classTeaPacket_1_1Graphics_1_1Texture.html#a4addce6fa8ff0ff4142e7aeb3d01b0f7',1,'TeaPacket::Graphics::Texture']]],
   ['platformviewport_5',['platformViewport',['../classTeaPacket_1_1Graphics_1_1Viewport.html#a262aa3035f0ebd3be13d716916fa9a12',1,'TeaPacket::Graphics::Viewport']]],
   ['platformwindow_6',['platformWindow',['../classTeaPacket_1_1Window_1_1Window.html#a94d7ae89c1c87bda61704487816b1f71',1,'TeaPacket::Window::Window']]],
-  ['presentdisplay_7',['PresentDisplay',['../classTeaPacket_1_1Graphics_1_1Display.html#a355cf89eb2cd8c0b3c927a3ebb360398',1,'TeaPacket::Graphics::Display']]],
+  ['presentall_7',['PresentAll',['../classTeaPacket_1_1Graphics_1_1Display.html#a49791344ae1fbf53a6eede84e71fef68',1,'TeaPacket::Graphics::Display']]],
   ['primitivetype_8',['PrimitiveType',['../namespaceTeaPacket.html#a45316859c4143652c8c3384ff4e67e8c',1,'TeaPacket']]],
   ['primitivetypes_2ehpp_9',['PrimitiveTypes.hpp',['../PrimitiveTypes_8hpp.html',1,'']]],
   ['processevents_10',['ProcessEvents',['../classTeaPacket_1_1Window_1_1Window.html#a7c0785af989b48d4e246036b951ea316',1,'TeaPacket::Window::Window']]],

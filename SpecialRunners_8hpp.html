@@ -107,32 +107,36 @@ $(function(){initNavTree('SpecialRunners_8hpp.html',''); initResizable(true); })
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a04bea0bd04d2b723d3558ce317ae956f" id="r_a04bea0bd04d2b723d3558ce317ae956f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04bea0bd04d2b723d3558ce317ae956f">RunBeforeMain</a>(Function)</td></tr>
-<tr class="separator:a04bea0bd04d2b723d3558ce317ae956f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae339ef335ac2a427bf56bb1f4a90936e" id="r_ae339ef335ac2a427bf56bb1f4a90936e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae339ef335ac2a427bf56bb1f4a90936e">TP_RunBeforeMain</a>(Function,  StepName)</td></tr>
+<tr class="separator:ae339ef335ac2a427bf56bb1f4a90936e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a04bea0bd04d2b723d3558ce317ae956f" name="a04bea0bd04d2b723d3558ce317ae956f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04bea0bd04d2b723d3558ce317ae956f">&#9670;&#160;</a></span>RunBeforeMain</h2>
+<a id="ae339ef335ac2a427bf56bb1f4a90936e" name="ae339ef335ac2a427bf56bb1f4a90936e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae339ef335ac2a427bf56bb1f4a90936e">&#9670;&#160;</a></span>TP_RunBeforeMain</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define RunBeforeMain</td>
+          <td class="memname">#define TP_RunBeforeMain</td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Function</em></span></td><td>)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>Function</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>StepName</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">class </span>Function##BeforeMain {    \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">class </span>StepName##BeforeMain {    \</div>
 <div class="line">        <span class="keyword">public</span>: \</div>
-<div class="line">        Function##BeforeMain() \</div>
+<div class="line">        StepName##BeforeMain() \</div>
 <div class="line">        { \</div>
 <div class="line">            Function();\</div>
 <div class="line">        }\</div>
 <div class="line">    }; \</div>
-<div class="line">    <span class="keyword">static</span> Function##BeforeMain Function##PreMainInstance;</div>
+<div class="line">    <span class="keyword">static</span> StepName##BeforeMain StepName##PreMainInstance;</div>
 </div><!-- fragment -->
 </div>
 </div>

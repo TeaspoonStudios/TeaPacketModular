@@ -127,8 +127,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab6c7e5f1e9a8a56be8dc651145dfc2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc88a752f899ec5aa6a2bc0bb857723d" id="r_acc88a752f899ec5aa6a2bc0bb857723d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc88a752f899ec5aa6a2bc0bb857723d">~Display</a> ()</td></tr>
 <tr class="separator:acc88a752f899ec5aa6a2bc0bb857723d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a355cf89eb2cd8c0b3c927a3ebb360398" id="r_a355cf89eb2cd8c0b3c927a3ebb360398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a355cf89eb2cd8c0b3c927a3ebb360398">PresentDisplay</a> ()</td></tr>
-<tr class="separator:a355cf89eb2cd8c0b3c927a3ebb360398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -144,6 +142,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a62a20c6b6b76513cc9425d0c65f6e350" id="r_a62a20c6b6b76513cc9425d0c65f6e350"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62a20c6b6b76513cc9425d0c65f6e350">DeInitialize</a> ()</td></tr>
 <tr class="memdesc:a62a20c6b6b76513cc9425d0c65f6e350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys all Displays,.  <br /></td></tr>
 <tr class="separator:a62a20c6b6b76513cc9425d0c65f6e350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49791344ae1fbf53a6eede84e71fef68" id="r_a49791344ae1fbf53a6eede84e71fef68"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49791344ae1fbf53a6eede84e71fef68">PresentAll</a> ()</td></tr>
+<tr class="separator:a49791344ae1fbf53a6eede84e71fef68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8412b5041df72305e3243e2d2212913" id="r_ae8412b5041df72305e3243e2d2212913"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8412b5041df72305e3243e2d2212913">WaitForVSync</a> ()</td></tr>
+<tr class="separator:ae8412b5041df72305e3243e2d2212913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -390,21 +392,53 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a355cf89eb2cd8c0b3c927a3ebb360398" name="a355cf89eb2cd8c0b3c927a3ebb360398"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a355cf89eb2cd8c0b3c927a3ebb360398">&#9670;&#160;</a></span>PresentDisplay()</h2>
+<a id="a49791344ae1fbf53a6eede84e71fef68" name="a49791344ae1fbf53a6eede84e71fef68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49791344ae1fbf53a6eede84e71fef68">&#9670;&#160;</a></span>PresentAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void TeaPacket::Graphics::Display::PresentDisplay </td>
+          <td class="memname">static void TeaPacket::Graphics::Display::PresentAll </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Updates the <a class="el" href="classTeaPacket_1_1Graphics_1_1Display.html" title="Represents a user-viewable area.">Display</a> with any new rendered changes from the viewport. </p><dl class="section note"><dt>Note</dt><dd>This does not need to be called by the user. <a class="el" href="classTeaPacket_1_1Graphics_1_1Viewport.html#ac39fe25d2c5fb41f7b61458b51c680b7">Viewport::FinishRender()</a> will call this. </dd></dl>
+
+</div>
+</div>
+<a id="ae8412b5041df72305e3243e2d2212913" name="ae8412b5041df72305e3243e2d2212913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8412b5041df72305e3243e2d2212913">&#9670;&#160;</a></span>WaitForVSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void TeaPacket::Graphics::Display::WaitForVSync </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

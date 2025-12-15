@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['log_0',['Log',['../namespaceTeaPacket.html#a649d2a1e8523f38423636a330f8b05a3',1,'TeaPacket::Log(T msg)'],['../namespaceTeaPacket.html#a7b2e33fb8d3e0066320674bec840d72a',1,'TeaPacket::Log(const char msg)'],['../namespaceTeaPacket.html#a9a7e77a1cbf5468622b429031f1a7447',1,'TeaPacket::Log(const char *msg)']]],
-  ['lognumdef_1',['LogNumDef',['../namespaceTeaPacket.html#a05657a1e57e61c68600e863735afda54',1,'TeaPacket']]],
-  ['logstring_2',['LogString',['../namespaceTeaPacket.html#a0d8bafe6698c43e5f85536f6accdde48',1,'TeaPacket']]]
+  ['initialize_0',['Initialize',['../namespaceTeaPacket_1_1Graphics.html#af893900d792015be0743d507f5ed8b29',1,'TeaPacket::Graphics::Initialize()'],['../namespaceTeaPacket_1_1Logging.html#a646a90b28a64430eba93e4d37c10dbaa',1,'TeaPacket::Logging::Initialize()'],['../namespaceTeaPacket_1_1System.html#a5bda852cd327ceb6f13d6eaaea721306',1,'TeaPacket::System::Initialize()']]],
+  ['initializedefaultdisplays_1',['InitializeDefaultDisplays',['../classTeaPacket_1_1Graphics_1_1Display.html#aae36fc36adba7cc38bc87599cab042ad',1,'TeaPacket::Graphics::Display']]]
 ];

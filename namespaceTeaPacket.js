@@ -11,9 +11,10 @@ var namespaceTeaPacket =
     [ "Math", "namespaceTeaPacket_1_1Math.html", "namespaceTeaPacket_1_1Math" ],
     [ "System", "namespaceTeaPacket_1_1System.html", [
       [ "DeInitialize", "namespaceTeaPacket_1_1System.html#a6b2dc805bbb7b89bc88e98c29c949f4c", null ],
+      [ "HookInits", "namespaceTeaPacket_1_1System.html#a2d9c229a244bddee0bca4577ea032c5e", null ],
       [ "Initialize", "namespaceTeaPacket_1_1System.html#a5bda852cd327ceb6f13d6eaaea721306", null ],
       [ "ProcessSystem", "namespaceTeaPacket_1_1System.html#a82a02141aa6881dc0de08cbf59b90b32", null ],
-      [ "isRunning", "namespaceTeaPacket_1_1System.html#a1b2c80a5c411c82dedeace6428df51ef", null ]
+      [ "ShouldRun", "namespaceTeaPacket_1_1System.html#a5c02733fbbac878707059ced26395b1f", null ]
     ] ],
     [ "Window", "namespaceTeaPacket_1_1Window.html", "namespaceTeaPacket_1_1Window" ],
     [ "BorrowedFixedArray", "classTeaPacket_1_1BorrowedFixedArray.html", "classTeaPacket_1_1BorrowedFixedArray" ],

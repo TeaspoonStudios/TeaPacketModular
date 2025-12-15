@@ -7,5 +7,6 @@ var Logging_8hpp =
     [ "TeaPacket::Log", "namespaceTeaPacket.html#a7b2e33fb8d3e0066320674bec840d72a", null ],
     [ "TeaPacket::Log", "namespaceTeaPacket.html#a649d2a1e8523f38423636a330f8b05a3", null ],
     [ "TeaPacket::LogNumDef", "namespaceTeaPacket.html#a05657a1e57e61c68600e863735afda54", null ],
-    [ "TeaPacket::LogString", "namespaceTeaPacket.html#a0d8bafe6698c43e5f85536f6accdde48", null ]
+    [ "TeaPacket::LogString", "namespaceTeaPacket.html#a0d8bafe6698c43e5f85536f6accdde48", null ],
+    [ "TP_HookInitDeInitFunctions", "Logging_8hpp.html#a0c7280379f90baf4d412a3cf5df3f26a", null ]
 ];

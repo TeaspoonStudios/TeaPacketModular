@@ -98,8 +98,7 @@ $(function(){initNavTree('namespaceTeaPacket_1_1System.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">TeaPacket::System Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -115,12 +114,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a82a02141aa6881dc0de08cbf59b90b32" id="r_a82a02141aa6881dc0de08cbf59b90b32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82a02141aa6881dc0de08cbf59b90b32">ProcessSystem</a> ()</td></tr>
 <tr class="memdesc:a82a02141aa6881dc0de08cbf59b90b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process any system-based events, data, behaviors, etc.  <br /></td></tr>
 <tr class="separator:a82a02141aa6881dc0de08cbf59b90b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a1b2c80a5c411c82dedeace6428df51ef" id="r_a1b2c80a5c411c82dedeace6428df51ef"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b2c80a5c411c82dedeace6428df51ef">isRunning</a> = true</td></tr>
-<tr class="memdesc:a1b2c80a5c411c82dedeace6428df51ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the app should be running or not. Will be false if the user requests to quit.  <br /></td></tr>
-<tr class="separator:a1b2c80a5c411c82dedeace6428df51ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9c229a244bddee0bca4577ea032c5e" id="r_a2d9c229a244bddee0bca4577ea032c5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d9c229a244bddee0bca4577ea032c5e">HookInits</a> ()</td></tr>
+<tr class="separator:a2d9c229a244bddee0bca4577ea032c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c02733fbbac878707059ced26395b1f" id="r_a5c02733fbbac878707059ced26395b1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c02733fbbac878707059ced26395b1f">ShouldRun</a> ()</td></tr>
+<tr class="memdesc:a5c02733fbbac878707059ced26395b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the app should be running or not. Will be false if the user requests to quit.  <br /></td></tr>
+<tr class="separator:a5c02733fbbac878707059ced26395b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a6b2dc805bbb7b89bc88e98c29c949f4c" name="a6b2dc805bbb7b89bc88e98c29c949f4c"></a>
@@ -139,6 +137,31 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>De-Initialize any core system-based functionality. Should be called last. </p>
+
+</div>
+</div>
+<a id="a2d9c229a244bddee0bca4577ea032c5e" name="a2d9c229a244bddee0bca4577ea032c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9c229a244bddee0bca4577ea032c5e">&#9670;&#160;</a></span>HookInits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TeaPacket::System::HookInits </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -180,25 +203,19 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a1b2c80a5c411c82dedeace6428df51ef" name="a1b2c80a5c411c82dedeace6428df51ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b2c80a5c411c82dedeace6428df51ef">&#9670;&#160;</a></span>isRunning</h2>
+<a id="a5c02733fbbac878707059ced26395b1f" name="a5c02733fbbac878707059ced26395b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c02733fbbac878707059ced26395b1f">&#9670;&#160;</a></span>ShouldRun()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::atomic_bool TeaPacket::System::isRunning = true</td>
+          <td class="memname">bool TeaPacket::System::ShouldRun </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Whether the app should be running or not. Will be false if the user requests to quit. </p>
