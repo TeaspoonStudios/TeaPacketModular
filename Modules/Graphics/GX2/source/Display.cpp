@@ -45,7 +45,7 @@ static void AllocateDRCScanBuffer(const DisposableForegroundMemResource* scanBuf
 Display::Display(const DisplayParameters& parameters):
 platformDisplay(std::make_unique<PlatformDisplay>(PlatformDisplay{
     .scanBuffer = DisposableForegroundMemResource(),
-    .displayType = static_cast<GX2Display>(GetDisplayCount() == 0),
+    .displayType = (GetDisplayCount() == 0 ? GX2Display::TV : GX2Display::DRC),
 })),
 viewport(ViewportParameters{
     .width = parameters.width,
