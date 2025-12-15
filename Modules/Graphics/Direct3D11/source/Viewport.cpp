@@ -122,7 +122,6 @@ void Viewport::BeginRender()
 
 void Viewport::FinishRender()
 {
-    if (ownedDisplay != nullptr) { ownedDisplay->PresentDisplay();}
     activeViewport = nullptr;
 }
 

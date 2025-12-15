@@ -2,6 +2,8 @@
 #include <cassert>
 #include <string>
 
+#include "TeaPacket/Core/Core.hpp"
+
 namespace TeaPacket
 {
     namespace Logging
@@ -62,5 +64,5 @@ namespace TeaPacket
     
 }
 
-
+TP_HookInitDeInitFunctions(Logging, 1);
 #undef LogNumDef

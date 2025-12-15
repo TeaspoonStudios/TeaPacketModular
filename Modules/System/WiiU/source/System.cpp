@@ -16,5 +16,10 @@ void System::DeInitialize()
 
 void System::ProcessSystem()
 {
-    isRunning = WHBProcIsRunning();
+    
+}
+
+bool System::ShouldRun()
+{
+    return WHBProcIsRunning();
 }

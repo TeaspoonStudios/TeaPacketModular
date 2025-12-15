@@ -1,11 +1,11 @@
 #pragma once
 
-#define RunBeforeMain(Function) \
-    class Function##BeforeMain {    \
+#define TP_RunBeforeMain(Function, StepName) \
+    class StepName##BeforeMain {    \
         public: \
-        Function##BeforeMain() \
+        StepName##BeforeMain() \
         { \
             Function();\
         }\
     }; \
-    static Function##BeforeMain Function##PreMainInstance;
+    static StepName##BeforeMain StepName##PreMainInstance;

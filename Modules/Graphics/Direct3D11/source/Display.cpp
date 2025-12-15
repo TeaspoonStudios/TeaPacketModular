@@ -81,9 +81,12 @@ void Display::InitializeDefaultDisplays(const std::vector<DisplayParameters>& re
     }
 }
 
-void Display::PresentDisplay()
+void Display::PresentAll()
 {
-    CheckErrorWinCom(platformDisplay->swapchain->Present(0,0));
+    for (const auto& display : Displays)
+    {
+        CheckErrorWinCom(display->platformDisplay->swapchain->Present(0,0));
+    }
 }
 
 Display::~Display() = default;

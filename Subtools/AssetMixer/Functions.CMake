@@ -6,7 +6,7 @@ if(NOT COMMAND TP_AM_BuildAssets)
         cmake_parse_arguments(PARSE_ARGV 0 TP_AM_BuildAssets
                 "${options}" "${oneValueArgs}" "${multiValueArgs}"
         )
-        
+        message(${TEAPACKET_ROOT})
         add_custom_command(
                 TARGET ${TP_AM_BuildAssets_TARGET}
                 PRE_BUILD

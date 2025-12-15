@@ -14,6 +14,8 @@
 #include "TeaPacket/Assets/ReadAsset.hpp"
 #include "TeaPacket/Graphics/Texture/TextureParameters.hpp"
 
+#include "TeaPacket/Core/Core.hpp"
+
 using namespace TeaPacket;
 using namespace TeaPacket::Window;
 using namespace TeaPacket::Graphics;
@@ -44,7 +46,7 @@ unsigned char texData[] = {
 
 [[noreturn]] int main()
 {
-    Initialize();
+    TeaPacket::Initialize();
     auto dispParams = DisplayParameters{.width = 1280, .height = 720};
     Display::InitializeDefaultDisplays({dispParams});
     Viewport* viewport = Display::GetDisplay(0)->GetViewport();
@@ -109,8 +111,7 @@ unsigned char texData[] = {
         DrawMesh();
         
         viewport->FinishRender();
-        static int number = 0;
-        number++;
+        Display::PresentAll();
     }
-    DeInitialize();
+    TeaPacket::DeInitialize();
 }

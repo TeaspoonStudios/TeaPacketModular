@@ -1,5 +1,7 @@
 #pragma once
 
+#include "TeaPacket/Core/Core.hpp"
+
 /// @brief A module for rendering and presenting graphics to the user.
 /// @details This module specifically represents a shader-based, OpenGL style rendering engine.
 /// Modules may support newer Graphics APIs, but any hardware lacking shader support will not be supported. <br>
@@ -20,3 +22,4 @@ namespace TeaPacket::Graphics{
     /// - The active Viewport.
     void DrawMesh();
 }
+TP_HookInitDeInitFunctions(Graphics, 10);

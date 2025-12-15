@@ -6,12 +6,19 @@
 
 using namespace TeaPacket;
 
-[[noreturn]] int main()
+int main()
 {
     System::Initialize();
+    Logging::Initialize();
     
-    LogString(Assets::ReadTextFile("test.txt"));
-    LogString(Assets::ReadTextFile("dir/test2.txt");
 
+    while (System::isRunning)
+    {
+        System::ProcessSystem();
+        LogString(Assets::ReadTextFile("test.txt"));
+        LogString(Assets::ReadTextFile("dir/test2.txt"));
+    }
+
+    Logging::DeInitialize();
     System::DeInitialize();
 }

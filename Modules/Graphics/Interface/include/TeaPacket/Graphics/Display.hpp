@@ -26,10 +26,6 @@ namespace TeaPacket::Graphics{
         explicit Display(const DisplayParameters& parameters);
         ~Display();
 
-        /// Updates the Display with any new rendered changes from the viewport.
-        /// @note This does not need to be called by the user. Viewport::FinishRender() will call this.
-        void PresentDisplay();
-
         /// A pointer to the implementation-defined data this display uses.
         std::unique_ptr<PlatformDisplay> platformDisplay;
 
@@ -44,11 +40,14 @@ namespace TeaPacket::Graphics{
         /// On other platforms, this will create a Display for every screen that can be rendered to.
         static void InitializeDefaultDisplays(const std::vector<DisplayParameters>& requestedParameters);
         /// Gets the total number of created displays.
-        static [[nodiscard]] size_t GetDisplayCount() { return Displays.size(); }
+        [[nodiscard]] static size_t GetDisplayCount() { return Displays.size(); }
         /// Gets a display by index. Displays are given indices in ascending order.
-        static [[nodiscard]] Display* GetDisplay(const unsigned char index) { return Displays[index].get(); }
+        [[nodiscard]] static Display* GetDisplay(const unsigned char index) { return Displays[index].get(); }
         /// Destroys all Displays,
         static void DeInitialize();
+
+        static void PresentAll();
+        static void WaitForVSync();
 
     private:
         static inline std::vector<std::unique_ptr<Display>> Displays = {};
