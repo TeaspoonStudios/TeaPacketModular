@@ -8,8 +8,6 @@ var searchData=
   ['platformviewport_5',['platformViewport',['../classTeaPacket_1_1Graphics_1_1Viewport.html#a262aa3035f0ebd3be13d716916fa9a12',1,'TeaPacket::Graphics::Viewport']]],
   ['platformwindow_6',['platformWindow',['../classTeaPacket_1_1Window_1_1Window.html#a94d7ae89c1c87bda61704487816b1f71',1,'TeaPacket::Window::Window']]],
   ['presentall_7',['PresentAll',['../classTeaPacket_1_1Graphics_1_1Display.html#a49791344ae1fbf53a6eede84e71fef68',1,'TeaPacket::Graphics::Display']]],
-  ['primitivetype_8',['PrimitiveType',['../namespaceTeaPacket.html#a45316859c4143652c8c3384ff4e67e8c',1,'TeaPacket']]],
-  ['primitivetypes_2ehpp_9',['PrimitiveTypes.hpp',['../PrimitiveTypes_8hpp.html',1,'']]],
-  ['processevents_10',['ProcessEvents',['../classTeaPacket_1_1Window_1_1Window.html#a7c0785af989b48d4e246036b951ea316',1,'TeaPacket::Window::Window']]],
-  ['processsystem_11',['ProcessSystem',['../namespaceTeaPacket_1_1System.html#a82a02141aa6881dc0de08cbf59b90b32',1,'TeaPacket::System']]]
+  ['processevents_8',['ProcessEvents',['../classTeaPacket_1_1Window_1_1Window.html#a7c0785af989b48d4e246036b951ea316',1,'TeaPacket::Window::Window']]],
+  ['processsystem_9',['ProcessSystem',['../namespaceTeaPacket_1_1System.html#a82a02141aa6881dc0de08cbf59b90b32',1,'TeaPacket::System']]]
 ];
