@@ -112,7 +112,6 @@ int main()
         .vertexShaderCode = Assets::ReadTextFile("color.vert"),
         .fragmentShaderCode = Assets::ReadTextFile("color.frag"),
         .inputAttributes = vertInfo,
-        .uniformBufferSizes = {16}
     };
 #else
     const auto shaderParms = ShaderParameters{
@@ -180,6 +179,7 @@ int main()
 #if GTP_STAGE >= GTP_ShadersAndMesh
         mesh.SetActive();
         shader.SetActive();
+#if GTP_STAGE >= GTP_Uniforms
         if (i > 100)
         {
             uniformBuffer.SendData(data2);
@@ -187,6 +187,7 @@ int main()
         {
             uniformBuffer.SendData(data1);
         }
+#endif
         DrawMesh();
 #endif
         
