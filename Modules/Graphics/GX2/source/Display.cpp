@@ -17,6 +17,7 @@
 
 #include "TeaPacket/Graphics/DisplayParameters.hpp"
 #include "TeaPacket/Graphics/ViewportParameters.hpp"
+#include "TeaPacket/Graphics/Graphics.hpp"
 
 using namespace TeaPacket::Graphics;
 using namespace TeaPacket::GX2;

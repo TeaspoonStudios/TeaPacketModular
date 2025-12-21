@@ -13,6 +13,7 @@
 #include "TeaPacket/Graphics/WindowsGraphics.hpp"
 #include "TeaPacket/MacroUtils/WindowsSpecific.hpp"
 #include "TeaPacket/Window/PlatformWindow.hpp"
+#include "TeaPacket/Graphics/Graphics.hpp"
 
 
 using namespace TeaPacket::Graphics;
