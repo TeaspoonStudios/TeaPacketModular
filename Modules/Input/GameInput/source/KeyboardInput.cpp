@@ -3,9 +3,9 @@
 #include <GameInput.h>
 
 #include "TeaPacket/Input/GameInputGlobal.hpp"
+#include "TeaPacket/Input/InputButtonInfo.hpp"
 #include "TeaPacket/Input/InputDevice.hpp"
 #include "TeaPacket/Input/PlatformInputDevice.hpp"
-#include "TeaPacket/Input/InputButtonInfo/IsKeyboard.hpp"
 #include "TeaPacket/Input/GameInput/VirtualKey.gen"
 #include "TeaPacket/MacroUtils/WindowsSpecific.hpp"
 
@@ -40,7 +40,7 @@ static void KeyboardPollInput(InputDevice* device)
     CheckErrorWinCom(
         gameInput->GetCurrentReading(
             GameInputKindKeyboard,
-            device->platformDevice->inputDevice,
+            device->platformDevice->inputDevice.Get(),
             device->platformDevice->reading.ReleaseAndGetAddressOf())
     );
     const uint32_t keyCount = device->platformDevice->reading->GetKeyCount();
@@ -56,12 +56,13 @@ static void KeyboardPollInput(InputDevice* device)
 
 InputDevice* Input::CreateKeyboardDevice()
 {
-    return &inputDevices.emplace_back(InputDeviceParameters{
+    return &InputDevice::connectedDevices.v.emplace_front(InputDeviceParameters{
             .PollInputFunction = KeyboardPollInput,
             .GetButtonFunction = KeyboardGetButtonPressed,
             .GetAxisFunction = KeyboardGetAxis,
             .GetNameFunction = GenericInputDeviceGetName,
             .isPhysical = true,
-            .controllerData = std::vector<GameInputKeyState>()
+            .type = ControllerType::Keyboard,
+            .controllerData = std::vector<GameInputKeyState>(),
         });
 }

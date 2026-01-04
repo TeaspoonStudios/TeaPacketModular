@@ -5,6 +5,5 @@ namespace TeaPacket::Input
 {
     void Initialize();
     void DeInitialize();
-    
 }
 TP_HookInitDeInitFunctions(Input, 5);

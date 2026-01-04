@@ -4,6 +4,8 @@
 namespace TeaPacket::Input
 {
     enum class InputButtonType : uint32_t{
+        NONE = 0,
+        START_KEY,
         KEY_BACKTICK,
         KEY_1,
         KEY_2,
@@ -66,8 +68,11 @@ namespace TeaPacket::Input
         KEY_ARROW_RIGHT,
         KEY_ARROW_DOWN,
         KEY_ARROW_LEFT,
+        END_KEY = 0xFFFFFF,
+        START_MOUSE,
         MOUSE_LEFT,
         MOUSE_RIGHT,
-        MOUSE_MIDDLE
+        MOUSE_MIDDLE,
+        END_MOUSE
     };
 }

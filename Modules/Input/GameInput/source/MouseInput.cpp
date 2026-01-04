@@ -6,9 +6,9 @@
 
 #include "TeaPacket/Input/GameInputGlobal.hpp"
 #include "TeaPacket/Input/InputAxis.hpp"
+#include "TeaPacket/Input/InputButtonInfo.hpp"
 #include "TeaPacket/Input/InputDevice.hpp"
 #include "TeaPacket/Input/PlatformInputDevice.hpp"
-#include "TeaPacket/Input/InputButtonInfo/IsMouse.hpp"
 #include "TeaPacket/Input/GameInput/VirtualKey.gen"
 #include "TeaPacket/MacroUtils/WindowsSpecific.hpp"
 #include "TeaPacket/Window/PlatformWindow.hpp"
@@ -65,7 +65,7 @@ static void MousePollInput(InputDevice* device)
     CheckErrorWinCom(
         gameInput->GetCurrentReading(
             GameInputKindMouse,
-            device->platformDevice->inputDevice,
+            device->platformDevice->inputDevice.Get(),
             device->platformDevice->reading.ReleaseAndGetAddressOf())
     );
     auto* state = std::any_cast<GameInputMouseState>(&device->controllerData);
@@ -74,12 +74,13 @@ static void MousePollInput(InputDevice* device)
 
 InputDevice* Input::CreateMouseDevice()
 {
-    return &inputDevices.emplace_back(InputDeviceParameters{
+    return &InputDevice::connectedDevices.v.emplace_front(InputDeviceParameters{
             .PollInputFunction = MousePollInput,
             .GetButtonFunction = MouseGetButtonPressed,
             .GetAxisFunction = MouseGetAxis,
             .GetNameFunction = GenericInputDeviceGetName,
             .isPhysical = true,
+            .type = ControllerType::Mouse,
             .controllerData = GameInputMouseState()
         });
 }

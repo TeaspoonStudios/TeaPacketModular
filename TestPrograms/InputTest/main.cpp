@@ -26,29 +26,23 @@ int main()
     {
         System::ProcessSystem();
         Display::BeginRender(0);
-        
+        Input::InputDevice::UpdateConnectedDevices();
         Input::InputDevice::PollAllDevices();
+        
         uint8_t r = 0;
         uint8_t g = 0;
         uint8_t b = 0;
-        if (Input::InputDevice::AnyDeviceHasButtonPressed(Input::InputButtonType::KEY_ENTER))
+
+        if (const Input::InputDevice* keyboarddevice =
+                Input::InputDevice::GetLastInputtedDevice(Input::ControllerType::Keyboard);
+            keyboarddevice->GetButtonPressed(Input::InputButtonType::KEY_H))
         {
             b = 255;
         }
-        for (const auto& device : Input::InputDevice::GetDevices())
-        {
-            if (const float val = device->GetAxis(Input::InputAxisType::POINTER_X);
-                val != std::numeric_limits<float>::infinity() && val != 0.0f)
-            {
-                r = static_cast<uint8_t>(std::clamp<float>(val * 255, 0, 255));
-            }
-            if (const float val = device->GetAxis(Input::InputAxisType::POINTER_Y);
-                val != std::numeric_limits<float>::infinity() && val != 0.0f)
-            {
-                g = static_cast<uint8_t>(std::clamp<float>(val * 255, 0, 255));
-            }
-            
-        }
+
+        const Input::InputDevice* mouseInputDevice = Input::InputDevice::GetLastInputtedDevice(Input::ControllerType::Mouse);
+        r = static_cast<uint8_t>(std::clamp<float>(mouseInputDevice->GetAxis(Input::InputAxisType::POINTER_X) * 255, 0, 255));
+        g = static_cast<uint8_t>(std::clamp<float>(mouseInputDevice->GetAxis(Input::InputAxisType::POINTER_Y) * 255, 0, 255));
         
         Viewport::ClearColor(r,g,b);
         Display::FinishRender(0);
