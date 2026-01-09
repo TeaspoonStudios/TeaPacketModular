@@ -125,7 +125,7 @@ void Viewport::FinishRender()
     activeViewport = nullptr;
 }
 
-void Viewport::ClearColor(const unsigned char r, const unsigned char g, const unsigned char b)
+void Viewport::ClearColor(const uint8_t r, const uint8_t g, const uint8_t b)
 {
     const float colorArray[4] = {r / 255.0f, g / 255.0f, b / 255.0f, 1.0f};
     deviceContext->ClearRenderTargetView(activeViewport->platformViewport->renderTargetView.Get(),colorArray);

@@ -70,7 +70,10 @@ def generate(file):
     dest_file_path = os.getcwd() + "/include/" + dest_file
     pathlib.Path(os.path.dirname(dest_file_path)).mkdir(parents=True, exist_ok=True)
     with open(dest_file_path, "w+") as genfile:
-        genfile.write("#include <stdexcept>\n")
+        mypath = pathlib.Path(__file__).resolve().parent
+        with open(f"{mypath}/header.hpp", "r") as headerFile:
+            genfile.write(headerFile.read())
+
         for header in headers:
             genfile.write("#include " + header + "\n")
         for namespace in namespaces:
@@ -101,6 +104,8 @@ def generate(file):
 
                 genfile.write(" }\n")
                 genfile.write("}\n")
+        with open(f"{mypath}/footer.hpp", "r") as footerFile:
+            genfile.write(footerFile.read())
 
 if __name__ == "__main__":
     generate(sys.argv[1])

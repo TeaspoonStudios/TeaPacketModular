@@ -176,7 +176,7 @@ void Viewport::FinishRender()
 
 constexpr float CharTo1Factor = 1.0f/255.0f;
 
-void Viewport::ClearColor(const unsigned char r, const unsigned char g, const unsigned char b)
+void Viewport::ClearColor(const uint8_t r, const uint8_t g, const uint8_t b)
 {
     if (activeViewport == nullptr) { return; }
     GX2ClearColor(&activeViewport->platformViewport->colorBuffer,

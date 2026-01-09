@@ -1,0 +1,13 @@
+Destination TeaPacket/Input/GameInput/ControllerType.gen
+Namespaces TeaPacket::Input
+Enum Class ControllerType
+Enum GameInputKind
+Headers <GameInput.h> "TeaPacket/Input/ControllerType.hpp" "TeaPacket/Input/GameInputGlobal.hpp"
+Data
+None GameInputKindUnknown
+Any GameInputKindAny
+Keyboard GameInputKindKeyboard
+Mouse GameInputKindMouse
+Gamepad GameInputKindController
+End
+Error Invalid Controller Type

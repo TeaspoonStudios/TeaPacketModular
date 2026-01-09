@@ -1,7 +1,7 @@
 #pragma once
 #include <cstdint>
 
-#include "InputDevice.hpp"
+#include "TeaPacket/Input/InputButtons.hpp"
 
 namespace TeaPacket::Input
 {

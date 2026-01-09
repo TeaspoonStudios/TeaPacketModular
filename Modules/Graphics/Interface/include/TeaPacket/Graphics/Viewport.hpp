@@ -42,7 +42,7 @@ namespace TeaPacket::Graphics
 
     public:
         /// Clears the active viewport with a specific color.
-        static void ClearColor(unsigned char r, unsigned char g, unsigned char b);
+        static void ClearColor(uint8_t r, uint8_t g, uint8_t b);
 
     private:
         static inline Viewport* activeViewport = nullptr;

@@ -1,0 +1,11 @@
+Destination TeaPacket/Input/GameInput/MouseButtons.gen
+Namespaces TeaPacket::Input
+Enum Class InputButtonType
+Enum GameInputMouseButtons Alias MouseButton
+Headers <GameInput.h> "TeaPacket/Input/InputButtons.hpp"
+Data
+MOUSE_LEFT GameInputMouseLeftButton
+MOUSE_RIGHT GameInputMouseRightButton
+MOUSE_MIDDLE GameInputMouseMiddleButton
+End
+Error Invalid MouseButton
