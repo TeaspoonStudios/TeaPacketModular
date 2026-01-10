@@ -49,7 +49,7 @@ int main()
         {
             Viewport::ClearColor(
                 Input::GetAxisValue(0, Input::InputAxisType::PAD_STICK_LEFT_X)*255,
-                Input::GetAxisValue(0, Input::InputAxisType::PAD_STICK_LEFT_Y)*255,
+                (Input::GetAxisValue(0, Input::InputAxisType::PAD_STICK_LEFT_Y)*255),
                 Input::IsButtonPressed(0, Input::InputButtonType::PAD_A) ? 255 : 0);
         } else if (Input::IsButtonPressed(0, Input::InputButtonType::PAD_RIGHT_TRIGGER))
         {

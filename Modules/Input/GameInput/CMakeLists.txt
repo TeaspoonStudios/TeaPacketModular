@@ -23,6 +23,12 @@ TP_EnumMapGen("${CMAKE_CURRENT_SOURCE_DIR}/generators/MouseButton.gmap" TeaPacke
 TP_EnumMapGen("${CMAKE_CURRENT_SOURCE_DIR}/generators/ControllerType.gmap" TeaPacket_Input_GameInput)
 TP_EnumMapGen("${CMAKE_CURRENT_SOURCE_DIR}/generators/GamepadButton.gmap" TeaPacket_Input_GameInput)
 
+TP_EnumMapGen("${CMAKE_CURRENT_SOURCE_DIR}/generators/GamepadButton.gmap" TeaPacket_Input_GameInput)
+
+TP_run_python_script(TeaPacket_Input_GameInput "${CMAKE_CURRENT_SOURCE_DIR}/setup/setup.py")
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/setup/gameinput_dir.gen") # not very good but idk how to make it better
+    file(READ "${CMAKE_CURRENT_SOURCE_DIR}/setup/gameinput_dir.gen" GAMEINPUT_DIR)
+endif ()
 
 target_include_directories(TeaPacket_Input_GameInput PRIVATE source)
 target_include_directories(TeaPacket_Input_GameInput PUBLIC include 
