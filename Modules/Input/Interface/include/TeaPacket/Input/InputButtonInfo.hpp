@@ -17,6 +17,7 @@ namespace TeaPacket::Input
         return button > InputButtonType::START_MOUSE && button < InputButtonType::END_MOUSE;
     }
 
+    /// Whether the given button is a gamepad button or not.
     constexpr bool IsGamepadButton(const InputButtonType button)
     {
         return button > InputButtonType::START_PAD && button < InputButtonType::END_PAD;
