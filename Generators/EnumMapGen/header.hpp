@@ -1,3 +1,4 @@
+#pragma once
 #include <stdexcept>
 #if defined(__clang__)
 #pragma clang diagnostic push

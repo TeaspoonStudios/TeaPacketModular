@@ -7,6 +7,7 @@ class EnumDef:
     is_class : bool = False
     name : str = ""
     alias : str = ""
+    default : str = None
 
 def generate(file):
     dest_file = ""
@@ -61,6 +62,9 @@ def generate(file):
                 submode_stack.append(EnumDataList())
             elif command == "error":
                 error_message = " ".join(words[1:])
+            elif command == "default":
+                for i in range(len(words)-1):
+                    enums[i].default = words[i+1]
             
     if dest_file == "":
         print("NO DESTINATION FILE SET FOR " + file + " MAPGEN")
@@ -99,8 +103,10 @@ def generate(file):
 
                 for i in range(len(enum_map)):
                     genfile.write("case " + enum_map[i][this_index] + ": return " + enum_map[i][other_index] + ";\n")
-                
-                genfile.write("default: throw std::runtime_error(\"" + error_message + "\");\n")
+                if other_enum.default is None:
+                    genfile.write("default: throw std::runtime_error(\"" + error_message + "\");\n")
+                else:
+                    genfile.write(f"default: return {other_enum.default};\n")
 
                 genfile.write(" }\n")
                 genfile.write("}\n")

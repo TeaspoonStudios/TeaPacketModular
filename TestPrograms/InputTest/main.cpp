@@ -26,6 +26,8 @@ int main()
         Input::UpdateControllers();
         Input::PollAllInputs();
         Viewport::ClearColor(0, 0, 0);
+
+/*
         const Input::ControllerSlot mouseSlot = Input::GetLastControllerPressed(Input::ControllerType::Mouse);
         if (mouseSlot != Input::NoControllerSlot)
         {
@@ -42,7 +44,11 @@ int main()
             {
                 Viewport::ClearColor(0, 0, 255);
             }
-        }
+        }*/
+        Viewport::ClearColor(
+            Input::GetAxisValue(0, Input::InputAxisType::POINTER_X)*255,
+            Input::GetAxisValue(0, Input::InputAxisType::POINTER_Y)*255,
+            Input::IsButtonPressed(0, Input::InputButtonType::MISC_TOUCH) ? 255 : 0);
         
         Display::FinishRender(0);
         Display::PresentAll();

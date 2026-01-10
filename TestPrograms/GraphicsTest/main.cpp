@@ -24,7 +24,7 @@
 #define GTP_Textures 5
 #define GTP_Uniforms 6
 
-#define GTP_STAGE GTP_Uniforms
+#define GTP_STAGE GTP_ClearColor
 
 using namespace TeaPacket;
 using namespace TeaPacket::Graphics;

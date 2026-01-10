@@ -9,6 +9,7 @@ namespace TeaPacket::Input
     /// - START_ and END_ should never be polled. They are utility enum values.
     /// - KEY_ represents keys on a keyboard.
     /// - MOUSE_ represents mouse buttons.
+    /// - PAD_ represents gamepad buttons.
     enum class InputButtonType : uint32_t{
         NONE = 0,
         START_KEY,
@@ -79,6 +80,29 @@ namespace TeaPacket::Input
         MOUSE_LEFT,
         MOUSE_RIGHT,
         MOUSE_MIDDLE,
-        END_MOUSE
+        END_MOUSE,
+        START_PAD,
+        PAD_A,
+        PAD_B,
+        PAD_C,
+        PAD_X,
+        PAD_Y,
+        PAD_Z,
+        PAD_LEFT_BUMPER,
+        PAD_RIGHT_BUMPER,
+        PAD_LEFT_TRIGGER,
+        PAD_RIGHT_TRIGGER,
+        PAD_START,
+        PAD_SELECT,
+        PAD_DPAD_UP,
+        PAD_DPAD_RIGHT,
+        PAD_DPAD_DOWN,
+        PAD_DPAD_LEFT,
+        PAD_STICK_LEFT,
+        PAD_STICK_RIGHT,
+        END_PAD,
+        START_MISC,
+        MISC_TOUCH,
+        END_MISC,
     };
 }
