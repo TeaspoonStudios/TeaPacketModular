@@ -29,6 +29,8 @@ var annotated_dup =
         [ "WindowParameters", "structTeaPacket_1_1Window_1_1WindowParameters.html", "structTeaPacket_1_1Window_1_1WindowParameters" ]
       ] ],
       [ "BorrowedFixedArray", "classTeaPacket_1_1BorrowedFixedArray.html", "classTeaPacket_1_1BorrowedFixedArray" ],
-      [ "BorrowedFixedArray< void >", "classTeaPacket_1_1BorrowedFixedArray_3_01void_01_4.html", "classTeaPacket_1_1BorrowedFixedArray_3_01void_01_4" ]
+      [ "BorrowedFixedArray< void >", "classTeaPacket_1_1BorrowedFixedArray_3_01void_01_4.html", "classTeaPacket_1_1BorrowedFixedArray_3_01void_01_4" ],
+      [ "MutexPair", "classTeaPacket_1_1MutexPair.html", "classTeaPacket_1_1MutexPair" ],
+      [ "SharedMutexPair", "classTeaPacket_1_1SharedMutexPair.html", "classTeaPacket_1_1SharedMutexPair" ]
     ] ]
 ];

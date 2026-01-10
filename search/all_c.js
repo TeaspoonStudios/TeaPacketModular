@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['operator_20std_3a_3astring_0',['string',['../classTeaPacket_1_1Math_1_1Vector.html#a4ac67cdb1c63e6ba2fddd1ea2fab3e44',1,'TeaPacket::Math::Vector']]],
-  ['operator_20vector_3c_20o_2c_20s_20_3e_1',['operator Vector&lt; O, s &gt;',['../classTeaPacket_1_1Math_1_1Vector.html#ad47bf1df4e74d85dc302087c000e04eb',1,'TeaPacket::Math::Vector']]],
-  ['operator_21_3d_2',['operator!=',['../classTeaPacket_1_1Math_1_1Vector.html#a6c49190cbb159cbcead5de26899494ea',1,'TeaPacket::Math::Vector']]],
-  ['operator_3d_3d_3',['operator==',['../classTeaPacket_1_1Math_1_1Vector.html#a56e4d48e4d3c079e47bf002530774735',1,'TeaPacket::Math::Vector']]],
-  ['operator_5b_5d_4',['operator[]',['../classTeaPacket_1_1BorrowedFixedArray.html#aef77f4b6e85179271fc55163ab9fbc06',1,'TeaPacket::BorrowedFixedArray::operator[](size_t x)'],['../classTeaPacket_1_1BorrowedFixedArray.html#abc186317ea466deaf9b46f6764ad07d2',1,'TeaPacket::BorrowedFixedArray::operator[](size_t x) const'],['../classTeaPacket_1_1BorrowedFixedArray.html#aef77f4b6e85179271fc55163ab9fbc06',1,'TeaPacket::BorrowedFixedArray&lt; void &gt;::operator[](size_t x)'],['../classTeaPacket_1_1BorrowedFixedArray.html#abc186317ea466deaf9b46f6764ad07d2',1,'TeaPacket::BorrowedFixedArray&lt; void &gt;::operator[](size_t x) const']]],
-  ['owneddisplay_5',['ownedDisplay',['../structTeaPacket_1_1Graphics_1_1ViewportParameters.html#a28ff6299be197798958a57d719a04aea',1,'TeaPacket::Graphics::ViewportParameters']]]
+  ['nearest_0',['Nearest',['../namespaceTeaPacket_1_1Graphics.html#aefe58220b1f38b6bf5cbc16417c8da6aa60494f02d440f316319dd0fad40ad007',1,'TeaPacket::Graphics']]],
+  ['nocontrollerslot_1',['NoControllerSlot',['../namespaceTeaPacket_1_1Input.html#a830ee2cdaf98af13b9d1ad2aac22d8bb',1,'TeaPacket::Input']]],
+  ['none_2',['NONE',['../namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4ab50339a10e1de285ac99d4c3990b8693',1,'TeaPacket::Graphics::NONE'],['../namespaceTeaPacket_1_1Input.html#a559feeeb64ad6e2d815b09b7fd809cb6ab50339a10e1de285ac99d4c3990b8693',1,'TeaPacket::Input::NONE']]],
+  ['none_3',['None',['../namespaceTeaPacket_1_1Graphics.html#aa65ec3f6a0cf5637fc2e4ea85ca6d06aa6adf97f83acf6453d4a6a4b1070f3754',1,'TeaPacket::Graphics::None'],['../namespaceTeaPacket_1_1Input.html#a0d192ef59200473adfbead3bbd1db91ba6adf97f83acf6453d4a6a4b1070f3754',1,'TeaPacket::Input::None']]]
 ];

@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">TeaPacket<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">TeaPacket<span id="projectnumber">&#160;0.2.0</span>
    </div>
    <div id="projectbrief">Cross platform game engine.</div>
   </td>
@@ -102,15 +102,19 @@ $(function(){initNavTree('ReadAsset_8hpp_source.html',''); initResizable(true); 
 <div class="contents">
 <a href="ReadAsset_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span></div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="namespaceTeaPacket.html">    6</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceTeaPacket_1_1Assets.html">TeaPacket::Assets</a></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespaceTeaPacket_1_1Assets.html#a651e00dcf9d0d06e6f4d4c0a0081b23d">   11</a></span>    std::string <a class="code hl_function" href="namespaceTeaPacket_1_1Assets.html#a651e00dcf9d0d06e6f4d4c0a0081b23d">ReadTextFile</a>(<span class="keyword">const</span> std::string&amp; assetPath);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span></div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="namespaceTeaPacket.html">    7</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceTeaPacket_1_1Assets.html">TeaPacket::Assets</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="namespaceTeaPacket_1_1Assets.html#a651e00dcf9d0d06e6f4d4c0a0081b23d">   12</a></span>    std::string <a class="code hl_function" href="namespaceTeaPacket_1_1Assets.html#a651e00dcf9d0d06e6f4d4c0a0081b23d">ReadTextFile</a>(<span class="keyword">const</span> std::string&amp; assetPath);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespaceTeaPacket_1_1Assets.html#a4063c8ed6409317ab5d58655dea532fa">   14</a></span>    std::vector&lt;unsigned char&gt; <a class="code hl_function" href="namespaceTeaPacket_1_1Assets.html#a4063c8ed6409317ab5d58655dea532fa">ReadBinaryFile</a>(<span class="keyword">const</span> std::string&amp; assetPath);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
 </div>
-<div class="ttc" id="anamespaceTeaPacket_1_1Assets_html"><div class="ttname"><a href="namespaceTeaPacket_1_1Assets.html">TeaPacket::Assets</a></div><div class="ttdoc">Functions related to reading data from the disk.</div><div class="ttdef"><b>Definition</b> ReadAsset.hpp:7</div></div>
+<div class="ttc" id="anamespaceTeaPacket_1_1Assets_html"><div class="ttname"><a href="namespaceTeaPacket_1_1Assets.html">TeaPacket::Assets</a></div><div class="ttdoc">Functions related to reading data from the disk.</div><div class="ttdef"><b>Definition</b> ReadAsset.hpp:8</div></div>
+<div class="ttc" id="anamespaceTeaPacket_1_1Assets_html_a4063c8ed6409317ab5d58655dea532fa"><div class="ttname"><a href="namespaceTeaPacket_1_1Assets.html#a4063c8ed6409317ab5d58655dea532fa">TeaPacket::Assets::ReadBinaryFile</a></div><div class="ttdeci">std::vector&lt; unsigned char &gt; ReadBinaryFile(const std::string &amp;assetPath)</div></div>
 <div class="ttc" id="anamespaceTeaPacket_1_1Assets_html_a651e00dcf9d0d06e6f4d4c0a0081b23d"><div class="ttname"><a href="namespaceTeaPacket_1_1Assets.html#a651e00dcf9d0d06e6f4d4c0a0081b23d">TeaPacket::Assets::ReadTextFile</a></div><div class="ttdeci">std::string ReadTextFile(const std::string &amp;assetPath)</div><div class="ttdoc">Reads an entire text file into a string.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
