@@ -102,3 +102,18 @@ static float GetVPadAxisValue(const InputAxisType axis)
     default: return 0;
     }
 }
+
+static bool GetVPadAxisSupported(const InputAxisType axis)
+{
+    switch (axis)
+    {
+    case InputAxisType::POINTER_X:
+    case InputAxisType::POINTER_Y:
+    case InputAxisType::PAD_STICK_LEFT_X:
+    case InputAxisType::PAD_STICK_LEFT_Y:
+    case InputAxisType::PAD_STICK_RIGHT_X:
+    case InputAxisType::PAD_STICK_RIGHT_Y:
+        return true;
+    default: return false;
+    }
+}

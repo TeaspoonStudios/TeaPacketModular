@@ -67,6 +67,30 @@ float Input::GetAxisValue(const ControllerSlot slot, const InputAxisType axis)
     return 0;
 }
 
+bool Input::IsAxisSupported(const ControllerSlot slot, const InputAxisType axis)
+{
+    if (slot == 0)
+    {
+        return GetVPadAxisSupported(axis);
+    }
+    return false;
+}
+
+ControllerSlot Input::GetLastControllerPressed(const ControllerType type)
+{
+    (void)type;
+    return 0; // FIX WHEN MORE CONTROLLERS ADDED
+}
+
+std::string Input::GetControllerName(ControllerSlot slot)
+{
+    if (slot == 0)
+    {
+        return "Wii U Gamepad";
+    }
+    return "";
+}
+
 ControllerSlot Input::GetSlotCount()
 {
     return 5;
