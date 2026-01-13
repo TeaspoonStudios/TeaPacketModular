@@ -179,7 +179,7 @@ Macros</h2></td></tr>
 <div class="line">    static_assert(i &gt;= s, <span class="stringliteral">&quot;Left side Vector must have a larger or equal size to the Right side Vector when performing math operations.&quot;</span>); \</div>
 <div class="line">    for(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> j = 0; j &lt; s; j++) \</div>
 <div class="line">    { \</div>
-<div class="line">        <span class="keyword">this</span>[j] OP##= other[j]; \</div>
+<div class="line">        _values[j] OP##= other._values[j]; \</div>
 <div class="line">    }\</div>
 <div class="line">    <span class="keywordflow">return</span> *<span class="keyword">this</span>; \</div>
 <div class="line">} \</div>
@@ -187,7 +187,7 @@ Macros</h2></td></tr>
 <div class="line">Vector&lt;T,i&gt; <span class="keyword">operator</span> OP (<span class="keyword">const</span> Vector&lt;T,s&gt;&amp; other) <span class="keyword">const</span> \</div>
 <div class="line">{ \</div>
 <div class="line">    static_assert(i &gt;= s, <span class="stringliteral">&quot;Left side Vector must have a larger or equal size to the Right side Vector when performing math operations.&quot;</span>); \</div>
-<div class="line">    Vector&lt;T,i&gt; vec = <span class="keyword">this</span>; \</div>
+<div class="line">    Vector&lt;T,i&gt; vec = *<span class="keyword">this</span>; \</div>
 <div class="line">    <span class="keywordflow">return</span> vec OP##= other; \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
@@ -226,7 +226,7 @@ Macros</h2></td></tr>
 <div class="line">TP_VECTOR_TYPE_GEN_SOLO(vecsize, <span class="keywordtype">long</span> <span class="keywordtype">long</span>, ll) \</div>
 <div class="line">TP_VECTOR_TYPE_GEN_SOLO(vecsize, <span class="keywordtype">signed</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>, sll) \</div>
 <div class="line">TP_VECTOR_TYPE_GEN_SOLO(vecsize, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>, ull)</div>
-<div class="ttc" id="aVector_8hpp_html_a39a31a1d8d444b53780c9c367d5847d3"><div class="ttname"><a href="#a39a31a1d8d444b53780c9c367d5847d3">TP_VECTOR_TYPE_GEN_SOLO</a></div><div class="ttdeci">#define TP_VECTOR_TYPE_GEN_SOLO(size, type, typeInitial)</div><div class="ttdef"><b>Definition</b> Vector.hpp:139</div></div>
+<div class="ttc" id="aVector_8hpp_html_a39a31a1d8d444b53780c9c367d5847d3"><div class="ttname"><a href="#a39a31a1d8d444b53780c9c367d5847d3">TP_VECTOR_TYPE_GEN_SOLO</a></div><div class="ttdeci">#define TP_VECTOR_TYPE_GEN_SOLO(size, type, typeInitial)</div><div class="ttdef"><b>Definition</b> Vector.hpp:149</div></div>
 </div><!-- fragment -->
 </div>
 </div>
