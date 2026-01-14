@@ -14,15 +14,30 @@ namespace TeaPacket::GX2
         int alignment = 0;
         bool Allocate()
         {
+            DeAllocate();
             data = static_cast<T*>(MEMAllocFromDefaultHeapEx(sizeof(T), alignment));
             return data == nullptr;
+        }
+
+        void DeAllocate()
+        {
+            if (data == nullptr){ return; }
+            MEMFreeToDefaultHeap(data);
         }
     public:
         
         
         // No Copy
-        MEM2Resource& operator=(const MEM2Resource&) = delete;
-        MEM2Resource(const MEM2Resource&) = delete;
+        MEM2Resource& operator=(const MEM2Resource& other)
+        {
+            Allocate();
+            memcpy(data, other.data, sizeof(T));
+        };
+        MEM2Resource(const MEM2Resource& other)
+        {
+            Allocate();
+            memcpy(data, other.data, sizeof(T));
+        };
         
         // Constructors
         MEM2Resource() = default;
@@ -33,8 +48,7 @@ namespace TeaPacket::GX2
 
         ~MEM2Resource()
         {
-            if (data == nullptr){ return; }
-            MEMFreeToDefaultHeap(data);
+            DeAllocate();
         }
 
         MEM2Resource(MEM2Resource&& other) noexcept
@@ -76,15 +90,29 @@ namespace TeaPacket::GX2
         size_t size = 0;
         bool Allocate()
         {
+            DeAllocate();
             data = MEMAllocFromDefaultHeapEx(size, alignment);
             return data == nullptr;
+        }
+        void DeAllocate()
+        {
+            if (data == nullptr){ return; }
+            MEMFreeToDefaultHeap(data);
         }
     public:
         
         
         // No Copy
-        MEM2Resource& operator=(const MEM2Resource&) = delete;
-        MEM2Resource(const MEM2Resource&) = delete;
+        MEM2Resource& operator=(const MEM2Resource& other)
+        {
+            Allocate();
+            memcpy(data, other.data, size);
+        };
+        MEM2Resource(const MEM2Resource& other)
+        {
+            Allocate();
+            memcpy(data, other.data, size);
+        };
         
         // Constructors
         MEM2Resource() = default;
@@ -95,8 +123,7 @@ namespace TeaPacket::GX2
 
         ~MEM2Resource()
         {
-            if (data == nullptr){ return; }
-            MEMFreeToDefaultHeap(data);
+            DeAllocate();
         }
 
         MEM2Resource(MEM2Resource&& other) noexcept

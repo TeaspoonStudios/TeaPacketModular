@@ -24,7 +24,7 @@ namespace TeaPacket::Graphics
         /// A pointer to the vertex data this mesh uses.
         BorrowedFixedArray<void> vertexData;
         /// A list of VertexDataInfos that describe each vertex of the mesh.
-        std::vector<ShaderVariableType> vertexInfo;
+        const std::vector<ShaderVariableType>& vertexInfo;
         /// An optional pointer to the face data this mesh uses.
         std::optional<BorrowedFixedArray<unsigned long>> indices;
     };

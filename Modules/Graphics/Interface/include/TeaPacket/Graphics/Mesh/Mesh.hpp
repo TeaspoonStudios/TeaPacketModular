@@ -30,6 +30,7 @@ namespace TeaPacket::Graphics
         
     public:
         /// Constructs a mesh via parameters.
+        Mesh() = default;
         explicit Mesh(const MeshParameters& parameters);
         ~Mesh();
 

@@ -39,4 +39,11 @@ void UniformBuffer::SendData(const void* data)
 
 UniformBuffer::~UniformBuffer() = default;
 
+UniformBuffer::UniformBuffer(UniformBuffer&& other) noexcept = default;
+UniformBuffer::UniformBuffer(const UniformBuffer& other):
+size(other.size)
+{
+    platformBuffer = std::make_unique<PlatformUniformBuffer>(*other.platformBuffer);
+}
+
 constexpr bool UniformBuffer::ShouldUBBeEndianSwapped = true;

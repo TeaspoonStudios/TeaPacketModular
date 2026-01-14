@@ -2,6 +2,8 @@
 
 #include <d3d11.h>
 
+#include <memory>
+
 #include "TeaPacket/Graphics/UniformBufferParameters.hpp"
 #include "TeaPacket/Graphics/PlatformUniformBuffer.hpp"
 #include "TeaPacket/Graphics/WindowsGraphics.hpp"
@@ -60,5 +62,12 @@ void UniformBuffer::SendData(const void* data)
 }
 
 constexpr bool UniformBuffer::ShouldUBBeEndianSwapped = false;
+
+UniformBuffer::UniformBuffer(UniformBuffer&& other) noexcept = default;
+UniformBuffer::UniformBuffer(const UniformBuffer& other):
+size(other.size)
+{
+    platformBuffer = std::make_unique<PlatformUniformBuffer>(*other.platformBuffer);
+}
 
 UniformBuffer::~UniformBuffer() = default;

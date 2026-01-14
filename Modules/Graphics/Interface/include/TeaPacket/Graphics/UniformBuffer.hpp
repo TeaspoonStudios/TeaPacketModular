@@ -22,6 +22,8 @@ namespace TeaPacket::Graphics
 
         /// Creates a buffer from specified parameters.
         explicit UniformBuffer(const UniformBufferParameters& parameters);
+        UniformBuffer(const UniformBuffer& other);
+        UniformBuffer(UniformBuffer&& other) noexcept;
         ~UniformBuffer();
 
         /// @brief Updates the data in this Uniform buffer.

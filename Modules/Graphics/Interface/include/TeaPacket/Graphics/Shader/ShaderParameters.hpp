@@ -24,6 +24,6 @@ namespace TeaPacket::Graphics
         /// The fragment (pixel) shader code this shader uses. Language is implementation-defined but use of AssetMixer is highly recommended.
         const std::string&fragmentShaderCode;
         /// A list describing the vertex inputs this shader takes.
-        std::vector<ShaderVariableType>& inputAttributes;
+        const std::vector<ShaderVariableType>& inputAttributes;
     };
 }

@@ -9,7 +9,7 @@ if(NOT COMMAND TP_AM_BuildAssets)
         message(${TEAPACKET_ROOT})
         add_custom_command(
                 TARGET ${TP_AM_BuildAssets_TARGET}
-                PRE_BUILD
+                POST_BUILD
                 COMMAND python
                     "${TEAPACKET_ROOT}/Subtools/AssetMixer/asset_mixer.py"
                     "${TP_AM_BuildAssets_SOURCE}"
