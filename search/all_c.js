@@ -1,7 +1,7 @@
 var searchData=
 [
   ['m_0',['m',['../classTeaPacket_1_1MutexPair.html#a320bbb200e051638fcb5d658608ec609',1,'TeaPacket::MutexPair::m'],['../classTeaPacket_1_1SharedMutexPair.html#ad296543bef89503f9b6c07fa734cbece',1,'TeaPacket::SharedMutexPair::m']]],
-  ['mesh_1',['Mesh',['../classTeaPacket_1_1Graphics_1_1Mesh.html',1,'TeaPacket::Graphics::Mesh'],['../classTeaPacket_1_1Graphics_1_1Mesh.html#a7580d66297ace0e7adfbcaaa98707b81',1,'TeaPacket::Graphics::Mesh::Mesh()']]],
+  ['mesh_1',['Mesh',['../classTeaPacket_1_1Graphics_1_1Mesh.html',1,'TeaPacket::Graphics::Mesh'],['../classTeaPacket_1_1Graphics_1_1Mesh.html#a0bb6d6dc3918fa58f85e14ac5d5b8045',1,'TeaPacket::Graphics::Mesh::Mesh()=default'],['../classTeaPacket_1_1Graphics_1_1Mesh.html#a7580d66297ace0e7adfbcaaa98707b81',1,'TeaPacket::Graphics::Mesh::Mesh(const MeshParameters &amp;parameters)']]],
   ['mesh_2ehpp_2',['Mesh.hpp',['../Mesh_8hpp.html',1,'']]],
   ['meshflags_3',['MeshFlags',['../structTeaPacket_1_1Graphics_1_1MeshFlags.html',1,'TeaPacket::Graphics']]],
   ['meshparameters_4',['MeshParameters',['../structTeaPacket_1_1Graphics_1_1MeshParameters.html',1,'TeaPacket::Graphics']]],
