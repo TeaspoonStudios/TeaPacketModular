@@ -14,8 +14,10 @@ var NAVTREEINDEX1 =
 "classTeaPacket_1_1Graphics_1_1Viewport.html#af02dc2ede3d4d57341c850fbcb27a8c6":[2,0,0,0,15,4],
 "classTeaPacket_1_1Math_1_1Vector.html":[1,0,0,5,0],
 "classTeaPacket_1_1Math_1_1Vector.html":[2,0,0,1,0],
-"classTeaPacket_1_1Math_1_1Vector.html#a0aeba833ba97e8fcccf8915e0e5955e1":[1,0,0,5,0,0],
-"classTeaPacket_1_1Math_1_1Vector.html#a0aeba833ba97e8fcccf8915e0e5955e1":[2,0,0,1,0,0],
+"classTeaPacket_1_1Math_1_1Vector.html#a1afaa33214afe912e61f51034594ede4":[1,0,0,5,0,1],
+"classTeaPacket_1_1Math_1_1Vector.html#a1afaa33214afe912e61f51034594ede4":[2,0,0,1,0,1],
+"classTeaPacket_1_1Math_1_1Vector.html#a3bb2de4df456e5fbdc1f3c4b1c289d7e":[1,0,0,5,0,0],
+"classTeaPacket_1_1Math_1_1Vector.html#a3bb2de4df456e5fbdc1f3c4b1c289d7e":[2,0,0,1,0,0],
 "classTeaPacket_1_1Math_1_1Vector.html#a4ac67cdb1c63e6ba2fddd1ea2fab3e44":[1,0,0,5,0,3],
 "classTeaPacket_1_1Math_1_1Vector.html#a4ac67cdb1c63e6ba2fddd1ea2fab3e44":[2,0,0,1,0,3],
 "classTeaPacket_1_1Math_1_1Vector.html#a56e4d48e4d3c079e47bf002530774735":[1,0,0,5,0,7],
@@ -28,8 +30,6 @@ var NAVTREEINDEX1 =
 "classTeaPacket_1_1Math_1_1Vector.html#a94338b70d1f154bfa230214e1e35a43b":[2,0,0,1,0,2],
 "classTeaPacket_1_1Math_1_1Vector.html#ad47bf1df4e74d85dc302087c000e04eb":[1,0,0,5,0,4],
 "classTeaPacket_1_1Math_1_1Vector.html#ad47bf1df4e74d85dc302087c000e04eb":[2,0,0,1,0,4],
-"classTeaPacket_1_1Math_1_1Vector.html#ad47c8e2b7bda806a6c18534772c612a9":[1,0,0,5,0,1],
-"classTeaPacket_1_1Math_1_1Vector.html#ad47c8e2b7bda806a6c18534772c612a9":[2,0,0,1,0,1],
 "classTeaPacket_1_1MutexPair.html":[1,0,0,10],
 "classTeaPacket_1_1MutexPair.html":[2,0,0,5],
 "classTeaPacket_1_1MutexPair.html#a320bbb200e051638fcb5d658608ec609":[1,0,0,10,0],
@@ -194,6 +194,7 @@ var NAVTREEINDEX1 =
 "namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4a508ecc95f0c676df4a7dfe11beb0d573":[1,0,0,2,21,1],
 "namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4ab4b279046a02077466fa26cabb00c642":[1,0,0,2,21,0],
 "namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4ab50339a10e1de285ac99d4c3990b8693":[1,0,0,2,21,3],
+"namespaceTeaPacket_1_1Graphics.html#aa3cb29fa50c847cf527cd9b8c55660cd":[1,0,0,2,29],
 "namespaceTeaPacket_1_1Graphics.html#aa65ec3f6a0cf5637fc2e4ea85ca6d06a":[1,0,0,2,19],
 "namespaceTeaPacket_1_1Graphics.html#aa65ec3f6a0cf5637fc2e4ea85ca6d06aa2b55387dd066c5bac646ac61543d152d":[1,0,0,2,19,2],
 "namespaceTeaPacket_1_1Graphics.html#aa65ec3f6a0cf5637fc2e4ea85ca6d06aa52f9ec21735243ad9917cda3ca077d32":[1,0,0,2,19,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "namespaceTeaPacket_1_1Input.html#a559feeeb64ad6e2d815b09b7fd809cb6a3e5c0293091cb077fcf3a86191b39cbf":[1,0,0,3,3,58],
 "namespaceTeaPacket_1_1Input.html#a559feeeb64ad6e2d815b09b7fd809cb6a40a30d27cd7724dbd18532078cb6d22a":[1,0,0,3,3,43],
 "namespaceTeaPacket_1_1Input.html#a559feeeb64ad6e2d815b09b7fd809cb6a4325fd3c81c734b069ecb0b9c46c45b2":[1,0,0,3,3,13],
-"namespaceTeaPacket_1_1Input.html#a559feeeb64ad6e2d815b09b7fd809cb6a43f1c1b2bb217aa04013aa12fb9695a8":[1,0,0,3,3,3],
-"namespaceTeaPacket_1_1Input.html#a559feeeb64ad6e2d815b09b7fd809cb6a4b239c8c2fdddedabd36a5c05edc2d41":[1,0,0,3,3,91]
+"namespaceTeaPacket_1_1Input.html#a559feeeb64ad6e2d815b09b7fd809cb6a43f1c1b2bb217aa04013aa12fb9695a8":[1,0,0,3,3,3]
 };

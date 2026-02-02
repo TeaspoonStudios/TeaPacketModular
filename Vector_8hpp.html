@@ -154,8 +154,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">T&amp; name() { <span class="keywordflow">return</span> _values[index]; <span class="keyword">static_assert</span>(index &lt;= i, <span class="stringliteral">&quot;Attempt to use an alias that doesn&#39;t exist for this TeaPacket Vector type! Alias index: &quot;</span> #index <span class="stringliteral">&quot;.&quot;</span> ); }; \</div>
-<div class="line"><span class="keyword">const</span> T&amp; name()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _values[index]; <span class="keyword">static_assert</span>(index &lt;= i, <span class="stringliteral">&quot;Attempt to use an alias that doesn&#39;t exist for this TeaPacket Vector type! Alias index: &quot;</span> #index <span class="stringliteral">&quot;.&quot;</span>); }; \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">constexpr</span> T&amp; name() { <span class="keywordflow">return</span> _values[index]; <span class="keyword">static_assert</span>(index &lt;= i, <span class="stringliteral">&quot;Attempt to use an alias that doesn&#39;t exist for this TeaPacket Vector type! Alias index: &quot;</span> #index <span class="stringliteral">&quot;.&quot;</span> ); }; \</div>
+<div class="line"><span class="keyword">constexpr</span> <span class="keyword">const</span> T&amp; name()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _values[index]; <span class="keyword">static_assert</span>(index &lt;= i, <span class="stringliteral">&quot;Attempt to use an alias that doesn&#39;t exist for this TeaPacket Vector type! Alias index: &quot;</span> #index <span class="stringliteral">&quot;.&quot;</span>); }; \</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -174,7 +174,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> s&gt; \</div>
-<div class="line">Vector&lt;T,i&gt;&amp; <span class="keyword">operator</span> OP##= (<span class="keyword">const</span> Vector&lt;T,s&gt;&amp; other) \</div>
+<div class="line"><span class="keyword">constexpr</span> Vector&lt;T,i&gt;&amp; <span class="keyword">operator</span> OP##= (<span class="keyword">const</span> Vector&lt;T,s&gt;&amp; other) \</div>
 <div class="line">{ \</div>
 <div class="line">    static_assert(i &gt;= s, <span class="stringliteral">&quot;Left side Vector must have a larger or equal size to the Right side Vector when performing math operations.&quot;</span>); \</div>
 <div class="line">    for(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> j = 0; j &lt; s; j++) \</div>
@@ -184,7 +184,7 @@ Macros</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> *<span class="keyword">this</span>; \</div>
 <div class="line">} \</div>
 <div class="line"><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> s&gt; \</div>
-<div class="line">Vector&lt;T,i&gt; <span class="keyword">operator</span> OP (<span class="keyword">const</span> Vector&lt;T,s&gt;&amp; other) <span class="keyword">const</span> \</div>
+<div class="line"><span class="keyword">constexpr</span> Vector&lt;T,i&gt; <span class="keyword">operator</span> OP (<span class="keyword">const</span> Vector&lt;T,s&gt;&amp; other) <span class="keyword">const</span> \</div>
 <div class="line">{ \</div>
 <div class="line">    static_assert(i &gt;= s, <span class="stringliteral">&quot;Left side Vector must have a larger or equal size to the Right side Vector when performing math operations.&quot;</span>); \</div>
 <div class="line">    Vector&lt;T,i&gt; vec = *<span class="keyword">this</span>; \</div>
@@ -226,7 +226,7 @@ Macros</h2></td></tr>
 <div class="line">TP_VECTOR_TYPE_GEN_SOLO(vecsize, <span class="keywordtype">long</span> <span class="keywordtype">long</span>, ll) \</div>
 <div class="line">TP_VECTOR_TYPE_GEN_SOLO(vecsize, <span class="keywordtype">signed</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>, sll) \</div>
 <div class="line">TP_VECTOR_TYPE_GEN_SOLO(vecsize, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>, ull)</div>
-<div class="ttc" id="aVector_8hpp_html_a39a31a1d8d444b53780c9c367d5847d3"><div class="ttname"><a href="#a39a31a1d8d444b53780c9c367d5847d3">TP_VECTOR_TYPE_GEN_SOLO</a></div><div class="ttdeci">#define TP_VECTOR_TYPE_GEN_SOLO(size, type, typeInitial)</div><div class="ttdef"><b>Definition</b> Vector.hpp:149</div></div>
+<div class="ttc" id="aVector_8hpp_html_a39a31a1d8d444b53780c9c367d5847d3"><div class="ttname"><a href="#a39a31a1d8d444b53780c9c367d5847d3">TP_VECTOR_TYPE_GEN_SOLO</a></div><div class="ttdeci">#define TP_VECTOR_TYPE_GEN_SOLO(size, type, typeInitial)</div><div class="ttdef"><b>Definition</b> Vector.hpp:146</div></div>
 </div><!-- fragment -->
 </div>
 </div>

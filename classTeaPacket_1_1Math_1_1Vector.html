@@ -128,19 +128,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ac67cdb1c63e6ba2fddd1ea2fab3e44" id="r_a4ac67cdb1c63e6ba2fddd1ea2fab3e44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ac67cdb1c63e6ba2fddd1ea2fab3e44">operator std::string</a> () const</td></tr>
 <tr class="memdesc:a4ac67cdb1c63e6ba2fddd1ea2fab3e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the <a class="el" href="classTeaPacket_1_1Math_1_1Vector.html" title="A template class for all base Vector types.">Vector</a> to a string (for printing or serialization purposes)  <br /></td></tr>
 <tr class="separator:a4ac67cdb1c63e6ba2fddd1ea2fab3e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0aeba833ba97e8fcccf8915e0e5955e1" id="r_a0aeba833ba97e8fcccf8915e0e5955e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0aeba833ba97e8fcccf8915e0e5955e1">Vector</a> ()</td></tr>
-<tr class="memdesc:a0aeba833ba97e8fcccf8915e0e5955e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default initializer, setting all values to garbage data.  <br /></td></tr>
-<tr class="separator:a0aeba833ba97e8fcccf8915e0e5955e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad47c8e2b7bda806a6c18534772c612a9" id="r_ad47c8e2b7bda806a6c18534772c612a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad47c8e2b7bda806a6c18534772c612a9">Vector</a> (std::initializer_list&lt; T &gt; il)</td></tr>
-<tr class="memdesc:ad47c8e2b7bda806a6c18534772c612a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializer list, sets all values to the given values in the list.  <br /></td></tr>
-<tr class="separator:ad47c8e2b7bda806a6c18534772c612a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb2de4df456e5fbdc1f3c4b1c289d7e" id="r_a3bb2de4df456e5fbdc1f3c4b1c289d7e"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bb2de4df456e5fbdc1f3c4b1c289d7e">Vector</a> ()=default</td></tr>
+<tr class="memdesc:a3bb2de4df456e5fbdc1f3c4b1c289d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default initializer, setting all values to garbage data.  <br /></td></tr>
+<tr class="separator:a3bb2de4df456e5fbdc1f3c4b1c289d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1afaa33214afe912e61f51034594ede4" id="r_a1afaa33214afe912e61f51034594ede4"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1afaa33214afe912e61f51034594ede4">Vector</a> (std::initializer_list&lt; T &gt; il)</td></tr>
+<tr class="memdesc:a1afaa33214afe912e61f51034594ede4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializer list, sets all values to the given values in the list.  <br /></td></tr>
+<tr class="separator:a1afaa33214afe912e61f51034594ede4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, unsigned char i&gt;<br />
 class TeaPacket::Math::Vector&lt; T, i &gt;</div><p>A template class for all base <a class="el" href="classTeaPacket_1_1Math_1_1Vector.html" title="A template class for all base Vector types.">Vector</a> types. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0aeba833ba97e8fcccf8915e0e5955e1" name="a0aeba833ba97e8fcccf8915e0e5955e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0aeba833ba97e8fcccf8915e0e5955e1">&#9670;&#160;</a></span>Vector() <span class="overload">[1/2]</span></h2>
+<a id="a3bb2de4df456e5fbdc1f3c4b1c289d7e" name="a3bb2de4df456e5fbdc1f3c4b1c289d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bb2de4df456e5fbdc1f3c4b1c289d7e">&#9670;&#160;</a></span>Vector() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +159,7 @@ template&lt;typename T, unsigned char i&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span><span class="mlabel default">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -168,8 +168,8 @@ template&lt;typename T, unsigned char i&gt; </div>
 
 </div>
 </div>
-<a id="ad47c8e2b7bda806a6c18534772c612a9" name="ad47c8e2b7bda806a6c18534772c612a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad47c8e2b7bda806a6c18534772c612a9">&#9670;&#160;</a></span>Vector() <span class="overload">[2/2]</span></h2>
+<a id="a1afaa33214afe912e61f51034594ede4" name="a1afaa33214afe912e61f51034594ede4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1afaa33214afe912e61f51034594ede4">&#9670;&#160;</a></span>Vector() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +188,7 @@ template&lt;typename T, unsigned char i&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -247,7 +247,7 @@ template&lt;typename T, unsigned char i&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

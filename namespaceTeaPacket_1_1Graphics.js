@@ -48,5 +48,6 @@ var namespaceTeaPacket_1_1Graphics =
     [ "GetTextureFormatBPP", "namespaceTeaPacket_1_1Graphics.html#a6f6bb9ccf48fbdc22e1533ad40bf6e45", null ],
     [ "GetTextureFormatBytesPerPixel", "namespaceTeaPacket_1_1Graphics.html#aab7bcaa02437b8c6937d65caa6328f90", null ],
     [ "GetTextureFormatChannelSizes", "namespaceTeaPacket_1_1Graphics.html#a56a3bc39cbefda1829f94a0afa58f5f9", null ],
-    [ "Initialize", "namespaceTeaPacket_1_1Graphics.html#af893900d792015be0743d507f5ed8b29", null ]
+    [ "Initialize", "namespaceTeaPacket_1_1Graphics.html#af893900d792015be0743d507f5ed8b29", null ],
+    [ "SetDepthEnabled", "namespaceTeaPacket_1_1Graphics.html#aa3cb29fa50c847cf527cd9b8c55660cd", null ]
 ];

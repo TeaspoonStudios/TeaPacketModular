@@ -1,7 +1,7 @@
 var searchData=
 [
   ['v_0',['v',['../classTeaPacket_1_1MutexPair.html#a8fd97ec3080a135aefa3c74f90b157e3',1,'TeaPacket::MutexPair::v'],['../classTeaPacket_1_1SharedMutexPair.html#af6cea7457720d87ddd8c983b76a12175',1,'TeaPacket::SharedMutexPair::v']]],
-  ['vector_1',['Vector',['../classTeaPacket_1_1Math_1_1Vector.html',1,'TeaPacket::Math::Vector&lt; T, i &gt;'],['../classTeaPacket_1_1Math_1_1Vector.html#a0aeba833ba97e8fcccf8915e0e5955e1',1,'TeaPacket::Math::Vector::Vector()'],['../classTeaPacket_1_1Math_1_1Vector.html#ad47c8e2b7bda806a6c18534772c612a9',1,'TeaPacket::Math::Vector::Vector(std::initializer_list&lt; T &gt; il)']]],
+  ['vector_1',['Vector',['../classTeaPacket_1_1Math_1_1Vector.html',1,'TeaPacket::Math::Vector&lt; T, i &gt;'],['../classTeaPacket_1_1Math_1_1Vector.html#a3bb2de4df456e5fbdc1f3c4b1c289d7e',1,'TeaPacket::Math::Vector::Vector()=default'],['../classTeaPacket_1_1Math_1_1Vector.html#a1afaa33214afe912e61f51034594ede4',1,'TeaPacket::Math::Vector::Vector(std::initializer_list&lt; T &gt; il)']]],
   ['vector_2ehpp_2',['Vector.hpp',['../Vector_8hpp.html',1,'']]],
   ['vector2_2ehpp_3',['Vector2.hpp',['../Vector2_8hpp.html',1,'']]],
   ['vector3_2ehpp_4',['Vector3.hpp',['../Vector3_8hpp.html',1,'']]],
