@@ -87,6 +87,28 @@ void Graphics::Initialize()
             depthStencilState.ReleaseAndGetAddressOf())
     );
     deviceContext->OMSetDepthStencilState(depthStencilState.Get(), 0);
+
+    D3D11_BLEND_DESC blendDesc;
+    ZeroStruct(blendDesc);
+    blendDesc.AlphaToCoverageEnable = false;
+    blendDesc.IndependentBlendEnable = false;
+
+    blendDesc.RenderTarget[0] = {
+        .BlendEnable = true,
+        .SrcBlend = D3D11_BLEND_SRC_ALPHA,
+        .DestBlend = D3D11_BLEND_INV_SRC_ALPHA,
+        .BlendOp = D3D11_BLEND_OP_ADD,
+        .SrcBlendAlpha = D3D11_BLEND_ONE,
+        .DestBlendAlpha = D3D11_BLEND_ZERO,
+        .BlendOpAlpha = D3D11_BLEND_OP_ADD,
+        .RenderTargetWriteMask = D3D11_COLOR_WRITE_ENABLE_ALL
+    };
+
+    CheckErrorWinCom(
+        device->CreateBlendState(&blendDesc, blendState.ReleaseAndGetAddressOf())
+    );
+    //constexpr float bf[] = { 0.f,0.f,0.f,0.f };
+    deviceContext->OMSetBlendState(blendState.Get(), nullptr, 0xffffffff);
 }
 
 void Graphics::DeInitialize()

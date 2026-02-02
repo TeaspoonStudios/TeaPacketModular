@@ -71,6 +71,17 @@ void Graphics::Initialize()
     assert(contextState);
     GX2SetupContextStateEx(contextState.get(), TRUE);
     GX2SetContextState(contextState.get());
+
+    GX2SetAlphaTest(GX2_TRUE, GX2_COMPARE_FUNC_GREATER, 0.0f);
+    GX2SetColorControl(GX2_LOGIC_OP_COPY, 0xFF, TRUE, TRUE);
+    GX2SetBlendControl(GX2_RENDER_TARGET_0,
+                /* RGB = [srcRGB * srcA] + [dstRGB * (1-srcA)] */
+                GX2_BLEND_MODE_SRC_ALPHA, GX2_BLEND_MODE_INV_SRC_ALPHA,
+                GX2_BLEND_COMBINE_MODE_ADD,
+                FALSE,
+                /* A = [srcA * 1] + [dstA * (1-srcA)] */
+                GX2_BLEND_MODE_INV_SRC_ALPHA, GX2_BLEND_MODE_ONE,
+                GX2_BLEND_COMBINE_MODE_ADD);
     
 }
 
