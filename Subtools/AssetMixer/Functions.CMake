@@ -1,16 +1,18 @@
 if(NOT COMMAND TP_AM_BuildAssets)
     function(TP_AM_BuildAssets)
-        message("Building assets...")
+        #message("Building assets...")
         set(oneValueArgs SOURCE DESTINATION TARGET ASSET_PLATFORM)
         set(multiValueArgs PARSER_DIRS)
         cmake_parse_arguments(PARSE_ARGV 0 TP_AM_BuildAssets
                 "${options}" "${oneValueArgs}" "${multiValueArgs}"
         )
         message(${TEAPACKET_ROOT})
+        message("${TEAPACKET_ROOT}/Subtools/AssetMixer/asset_mixer.py")
         add_custom_command(
                 TARGET ${TP_AM_BuildAssets_TARGET}
-                POST_BUILD
-                COMMAND python
+                PRE_BUILD
+                COMMENT "Building assets..."
+                COMMAND python3
                     "${TEAPACKET_ROOT}/Subtools/AssetMixer/asset_mixer.py"
                     "${TP_AM_BuildAssets_SOURCE}"
                     "${TP_AM_BuildAssets_DESTINATION}"
