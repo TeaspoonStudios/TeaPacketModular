@@ -48,5 +48,17 @@ namespace TeaPacket::Graphics
                 val = Endianness::Swap(val);
             }
         }
+
+        template<typename T>
+        static T SwapIfNeededInPlace(T val)
+        {
+            if (ShouldUBBeEndianSwapped)
+            {
+                return Endianness::Swap(val);
+            } else
+            {
+                return val;
+            }
+        }
     };
 }
