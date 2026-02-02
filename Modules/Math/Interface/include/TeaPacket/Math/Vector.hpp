@@ -5,12 +5,12 @@
 #include <string>
 
 #define TP_VEC_ALIAS(name, index) \
-T& name() { return _values[index]; static_assert(index <= i, "Attempt to use an alias that doesn't exist for this TeaPacket Vector type! Alias index: " #index "." ); }; \
-const T& name() const { return _values[index]; static_assert(index <= i, "Attempt to use an alias that doesn't exist for this TeaPacket Vector type! Alias index: " #index "."); }; \
+constexpr T& name() { return _values[index]; static_assert(index <= i, "Attempt to use an alias that doesn't exist for this TeaPacket Vector type! Alias index: " #index "." ); }; \
+constexpr const T& name() const { return _values[index]; static_assert(index <= i, "Attempt to use an alias that doesn't exist for this TeaPacket Vector type! Alias index: " #index "."); }; \
 
 #define TP_VEC_MATH_OPERATOR(OP) \
 template<unsigned char s> \
-Vector<T,i>& operator OP##= (const Vector<T,s>& other) \
+constexpr Vector<T,i>& operator OP##= (const Vector<T,s>& other) \
 { \
     static_assert(i >= s, "Left side Vector must have a larger or equal size to the Right side Vector when performing math operations."); \
     for(unsigned char j = 0; j < s; j++) \
@@ -20,7 +20,7 @@ Vector<T,i>& operator OP##= (const Vector<T,s>& other) \
     return *this; \
 } \
 template<unsigned char s> \
-Vector<T,i> operator OP (const Vector<T,s>& other) const \
+constexpr Vector<T,i> operator OP (const Vector<T,s>& other) const \
 { \
     static_assert(i >= s, "Left side Vector must have a larger or equal size to the Right side Vector when performing math operations."); \
     Vector<T,i> vec = *this; \
@@ -116,7 +116,7 @@ namespace TeaPacket::Math
         }
 
         /// Convert the Vector to a string (for printing or serialization purposes)
-        operator std::string() const
+        explicit operator std::string() const
         {
             std::string str = "{";
             for (unsigned char j = 0; j < i; j++)
@@ -128,13 +128,10 @@ namespace TeaPacket::Math
         }
 
         /// Default initializer, setting all values to garbage data.
-        Vector()
-        {
-            //_values = {};
-        }
+        constexpr Vector() = default;
 
         /// Initializer list, sets all values to the given values in the list.
-        Vector(std::initializer_list<T> il)
+        constexpr Vector(std::initializer_list<T> il)
         {
             std::copy(il.begin(), il.end(), _values);
         }
