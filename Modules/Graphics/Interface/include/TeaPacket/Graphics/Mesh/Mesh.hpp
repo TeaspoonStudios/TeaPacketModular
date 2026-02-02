@@ -32,6 +32,7 @@ namespace TeaPacket::Graphics
         /// Constructs a mesh via parameters.
         Mesh() = default;
         explicit Mesh(const MeshParameters& parameters);
+        Mesh(Mesh&& source) noexcept;
         ~Mesh();
 
         /// Sets this mesh to be the currently active mesh, to be used in future DrawMesh() calls.

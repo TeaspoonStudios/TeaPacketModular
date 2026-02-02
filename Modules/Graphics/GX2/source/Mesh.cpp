@@ -75,4 +75,5 @@ void Mesh::SetActive()
     activeMesh = this;
 }
 
+Mesh::Mesh(Mesh&& source) noexcept = default;
 Mesh::~Mesh() = default;
