@@ -1,7 +1,6 @@
 #pragma once
 
 #include "GraphicsHeap/DisposableForegroundResource.hpp"
-#include "GraphicsHeap/MEM2Resource.hpp"
 
 namespace TeaPacket::Graphics
 {
