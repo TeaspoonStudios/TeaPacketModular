@@ -19,12 +19,15 @@
 using namespace TeaPacket::Graphics;
 
 Display::Display(const DisplayParameters& parameters):
-viewport(ViewportParameters{
-    .width = parameters.width,
-    .height = parameters.height,
-    .ownedDisplay = this
-    }),
-platformDisplay(std::make_unique<PlatformDisplay>())
+    platformDisplay(std::make_unique<PlatformDisplay>()),
+    viewport(ViewportParameters{
+        .width = parameters.width,
+        .height = parameters.height,
+        .flags = {
+            .shaderUsable = false
+        },
+        .ownedDisplay = this,
+    })
 {
     platformDisplay->window = std::make_unique<Window::Window>(Window::WindowParameters{
         .x = 0,
@@ -65,14 +68,16 @@ platformDisplay(std::make_unique<PlatformDisplay>())
 
     CheckErrorWinCom(
         platformDisplay->swapchain->GetBuffer(0, __uuidof(ID3D11Texture2D),
-                            reinterpret_cast<LPVOID*>(viewport.GetTexture()->platformTexture->texture2D.ReleaseAndGetAddressOf()))
+                                              reinterpret_cast<LPVOID*>(viewport.GetTexture()->platformTexture->texture2D.ReleaseAndGetAddressOf()))
     );
 
     CheckErrorWinCom(
         device->CreateRenderTargetView(viewport.GetTexture()->platformTexture->texture2D.Get(), NULL,
-            viewport.platformViewport->renderTargetView.ReleaseAndGetAddressOf())
-        );
+                                       viewport.platformViewport->renderTargetView.ReleaseAndGetAddressOf())
+    );
 }
+
+Display::~Display() = default;
 
 void Display::InitializeDefaultDisplays(const std::vector<DisplayParameters>& requestedParameters)
 {
@@ -82,22 +87,20 @@ void Display::InitializeDefaultDisplays(const std::vector<DisplayParameters>& re
     }
 }
 
+void Display::DeInitialize()
+{
+    Displays.clear();
+}
+
 void Display::PresentAll()
 {
     for (const auto& display : Displays)
     {
-        CheckErrorWinCom(display->platformDisplay->swapchain->Present(1,0));
+        CheckErrorWinCom(display->platformDisplay->swapchain->Present(0,0));
     }
 }
 
 void Display::WaitForVSync()
 {
-    
-}
 
-Display::~Display() = default;
-
-void Display::DeInitialize()
-{
-    Displays.clear();
 }

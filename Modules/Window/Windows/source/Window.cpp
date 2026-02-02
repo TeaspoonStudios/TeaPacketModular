@@ -79,8 +79,8 @@ Window::Window(const WindowParameters& parameters):
 }
 
 #define UpdateWindowPosition() SetWindowPos( \
-platformWindow->windowHandle, NULL, \
-x, y, NULL, NULL, \
+platformWindow->windowHandle, nullptr, \
+x, y, 0, 0, \
 SWP_NOSIZE | SWP_NOZORDER | SWP_NOACTIVATE)
 
 void Window::SetXPos(const unsigned short newXPos)
@@ -96,7 +96,7 @@ void Window::SetYPos(const unsigned short newYPos)
 }
 
 #define UpdateWindowSize() SetWindowPos(\
-    platformWindow->windowHandle, NULL, NULL, NULL, \
+    platformWindow->windowHandle, nullptr, 0, 0, \
     width, height, \
     SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE);
 

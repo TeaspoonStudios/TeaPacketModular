@@ -1,7 +1,7 @@
 #pragma once
 
-#include <numeric>
 #include <vector>
+#include <cstdint>
 
 namespace TeaPacket::Graphics
 {

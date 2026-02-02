@@ -20,6 +20,7 @@ size_t ShaderVariableType::GetSize() const
     case 4: return sizeof(DirectX::XMFLOAT4);
     default: break;
         }
+        break;
     case Int:
         switch (this->amount)
         {
@@ -29,6 +30,7 @@ size_t ShaderVariableType::GetSize() const
     case 4: return sizeof(DirectX::XMINT4);
     default: break;
         }
+        break;
     case UInt:
         switch (this->amount)
         {
@@ -38,6 +40,7 @@ size_t ShaderVariableType::GetSize() const
     case 4: return sizeof(DirectX::XMUINT4);
     default: break;
         }
+        break;
     }
-    throw std::exception("BAD VALUE");
+    throw std::exception();
 }

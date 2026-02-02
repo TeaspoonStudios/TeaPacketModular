@@ -19,6 +19,8 @@
 using namespace TeaPacket::Graphics;
 
 Viewport::Viewport(const ViewportParameters& parameters):
+platformViewport(std::make_unique<PlatformViewport>()),
+
 colorTexture(TextureParameters{
     .data = nullptr,
     .width = parameters.width,
@@ -31,8 +33,9 @@ colorTexture(TextureParameters{
         .writeMode = TextureAvailableMode::GPU,
         .cpuReadable = true,
     },
+    .filterMode = TextureFilterMode::Linear,
+    .wrapMode = TextureWrapMode::Wrap
 }),
-
 depthTexture(TextureParameters{
     .data = nullptr,
     .width = parameters.width,
@@ -45,8 +48,9 @@ depthTexture(TextureParameters{
         .writeMode = TextureAvailableMode::GPU,
         .cpuReadable = true
     },
+    .filterMode = TextureFilterMode::Linear,
+    .wrapMode = TextureWrapMode::Wrap
 }),
-platformViewport(std::make_unique<PlatformViewport>()),
 ownedDisplay(parameters.ownedDisplay)
 {
     D3D11_RENDER_TARGET_VIEW_DESC renderTargetViewDesc;

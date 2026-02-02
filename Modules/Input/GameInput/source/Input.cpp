@@ -1,7 +1,9 @@
 #include "TeaPacket/Input/Input.hpp"
 
 #include <algorithm>
+#include <cassert>
 #include <GameInput.h>
+#include <mutex>
 
 #include "TeaPacket/MacroUtils/WindowsSpecific.hpp"
 

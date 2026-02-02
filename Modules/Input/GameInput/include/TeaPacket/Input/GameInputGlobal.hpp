@@ -12,5 +12,6 @@ namespace TeaPacket::Input
 {
     inline Microsoft::WRL::ComPtr<IGameInput> gameInput;
 
-    constexpr auto GameInputKindAny = static_cast<GameInputKind>(std::numeric_limits<std::underlying_type_t<GameInputKind>>::max());
+    using GameInputKindType = std::underlying_type_t<GameInputKind>;
+    constexpr auto GameInputKindAny = static_cast<GameInputKind>(0x000FFFFF);
 }

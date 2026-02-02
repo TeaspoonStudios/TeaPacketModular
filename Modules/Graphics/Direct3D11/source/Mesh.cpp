@@ -12,8 +12,8 @@ using namespace TeaPacket::Graphics;
 
 Mesh::Mesh(const MeshParameters& parameters):
     platformMesh(std::make_unique<PlatformMesh>()),
-    vertexDataInfo(parameters.vertexInfo),
-    hasIndex(parameters.flags.useIndices)
+    hasIndex(parameters.flags.useIndices),
+    vertexDataInfo(parameters.vertexInfo)
 {
     size_t vertexSize = 0;
     for (const ShaderVariableType& vertexData : parameters.vertexInfo)

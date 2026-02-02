@@ -66,8 +66,8 @@ namespace TeaPacket::Window
         Graphics::Display* display;
 
     public:
-        static [[nodiscard]] size_t GetWindowCount() { return Windows.size(); }
-        static [[nodiscard]] Window* GetWindow(const size_t index) { return Windows[index]; }
+        [[nodiscard]] static size_t GetWindowCount() { return Windows.size(); }
+        [[nodiscard]] static Window* GetWindow(const size_t index) { return Windows[index]; }
     private:
         static inline std::vector<Window*> Windows = {};
 

@@ -2,6 +2,7 @@
 #include "TeaPacket/Core/Core.hpp"
 
 #include <cstdint>
+#include <string>
 
 #include "TeaPacket/Input/ControllerType.hpp"
 
