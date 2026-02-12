@@ -1,7 +1,7 @@
 import os, subprocess, pathlib
 
 
-def parse_and_copy(source_file, dest_file):
+def parse_and_copy(source_file, dest_file, root_dir):
     work_dir = str(pathlib.Path(__file__).parents[1]) + "/external_tools/shader_transpiler/"
 
     subprocess.run(f"glslangValidator.exe -H -V -o shader.spv {source_file}", cwd=work_dir, shell=True, check=True)

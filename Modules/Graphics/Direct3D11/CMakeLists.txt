@@ -33,4 +33,6 @@ target_link_libraries(TeaPacket_Graphics_Direct3D11 TeaPacket_Graphics_Base
         TeaPacket_MacroUtils_Base TeaPacket_MacroUtils_WinSpecific
         TeaPacket_Math_Base TeaPacket_Logging_STDIO)
 
+set(TP_ASSET_MIXER_DIRS "${TP_ASSET_MIXER_DIRS};${CMAKE_CURRENT_SOURCE_DIR}/AssetMixer/Parsers" CACHE INTERNAL "" FORCE)
+
 include("${TEAPACKET_ROOT}/CMakeCommons/CommonEnd.CMake")

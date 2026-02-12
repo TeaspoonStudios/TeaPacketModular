@@ -25,13 +25,15 @@ def get_asset_func(source_file : str, parser_dirs : set):
     want_script_name = f"{extension}.py"
 
     for parser_dir in parser_dirs:
-        check_script = f"{parser_dir}/{want_script_name}"
-        if os.path.exists(check_script):
-            module = get_dynamic_module(check_script)
-            return module.parse_and_copy
+        for root, dirs, files in os.walk(parser_dir):
+            for filename in files:
+                if filename == f"{extension}.py":
+                    module = get_dynamic_module(os.path.join(root, filename))
+                    return module.parse_and_copy
+
     return get_dynamic_module(f"{get_asset_mixer_path()}/Parsers/default.py").parse_and_copy
 
-def build_asset(source_file : str, dest_file : str, parser_dirs : set):
+def build_asset(source_file : str, dest_file : str, parser_dirs : set, root_dir):
     dest_dir = os.path.dirname(dest_file)
     os.makedirs(dest_dir, exist_ok=True)
 
@@ -43,14 +45,14 @@ def build_asset(source_file : str, dest_file : str, parser_dirs : set):
             return
 
     asset_func = get_asset_func(source_file, parser_dirs)
-    asset_func(source_file, dest_file)
+    asset_func(source_file, dest_file, root_dir)
 
 def build_asset_files(asset_source, dest_folder, parser_dirs):
     for root, dirs, files in os.walk(asset_source):
         for filename in files:
             relative_path = f"{root}/{filename}".replace(asset_source, "")
             dest_path = f"{dest_folder}{relative_path}"
-            build_asset(f"{root}/{filename}", dest_path, parser_dirs)
+            build_asset(f"{root}/{filename}", dest_path, parser_dirs, asset_source)
 
 def build_all(source_folder, dest_folder, asset_platform, parser_dirs):
     dest_dir = get_dest_dir(asset_platform, dest_folder)
