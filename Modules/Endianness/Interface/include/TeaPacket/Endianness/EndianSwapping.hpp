@@ -1,11 +1,9 @@
 #pragma once
 
-#include <cstdint>
-#include <stdlib.h>
+#include <cstring>
 
 #if __cplusplus >= 202002L
 #include <bit>
-#include <type_traits>
 #endif
 
 /// Functions related to Endianness and Endian Swapping
