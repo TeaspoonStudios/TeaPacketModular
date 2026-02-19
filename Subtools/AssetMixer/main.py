@@ -13,6 +13,6 @@ parser.add_argument("--rebuild", "-r", help="Force-rebuilds all assets", action=
 
 args = parser.parse_args()
 
-print(args.passes)
+#print(args.passes)
 
 assetmixer.assetmixer.build_assets(args.asset_source, args.asset_destination, args.passes, args.rebuild)

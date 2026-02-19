@@ -1,6 +1,11 @@
 from pathlib import Path
 import sys, os, subprocess
 
+types = ("*.frag", "*.vert", "*.vs", "*.fs", "*.psh", "*.fsh", "*.vsh", "*.glsl")
+
+def get_updated_files(asset_source : str, asset_built : str):
+    pass
+
 def asset_pass(asset_dir):
     sys.path.append(os.path.dirname(__file__))
 
@@ -10,7 +15,6 @@ def asset_pass(asset_dir):
     #print(asset_dir)
     working_dir = Path(__file__).parents[1] / "external_tools" / "shader_transpiler"
 
-    types = ("*.frag", "*.vert", "*.vs", "*.fs", "*.psh", "*.fsh", "*.vsh", "*.glsl")
 
     files_to_convert = []
     path_to_search = Path(asset_dir)
