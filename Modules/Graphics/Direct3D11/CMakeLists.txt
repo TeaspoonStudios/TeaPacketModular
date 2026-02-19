@@ -23,8 +23,6 @@ TP_EnumMapGen("${CMAKE_CURRENT_SOURCE_DIR}/generators/Texture.gmap" TeaPacket_Gr
 TP_EnumMapGen("${CMAKE_CURRENT_SOURCE_DIR}/generators/TextureFilter.gmap" TeaPacket_Graphics_Direct3D11)
 TP_EnumMapGen("${CMAKE_CURRENT_SOURCE_DIR}/generators/TextureWrap.gmap" TeaPacket_Graphics_Direct3D11)
 
-TP_run_python_script(TeaPacket_Graphics_Direct3D11 "${CMAKE_CURRENT_SOURCE_DIR}/AssetMixer/setup.py")
-
 target_include_directories(TeaPacket_Graphics_Direct3D11 PRIVATE source)
 target_include_directories(TeaPacket_Graphics_Direct3D11 PUBLIC include)
 target_link_libraries(TeaPacket_Graphics_Direct3D11 TeaPacket_Graphics_Base
@@ -33,6 +31,6 @@ target_link_libraries(TeaPacket_Graphics_Direct3D11 TeaPacket_Graphics_Base
         TeaPacket_MacroUtils_Base TeaPacket_MacroUtils_WinSpecific
         TeaPacket_Math_Base TeaPacket_Logging_STDIO)
 
-set(TP_ASSET_MIXER_DIRS "${TP_ASSET_MIXER_DIRS};${CMAKE_CURRENT_SOURCE_DIR}/AssetMixer/Parsers" CACHE INTERNAL "" FORCE)
+set(TP_ASSET_MIXER_PASSES "${TP_ASSET_MIXER_PASSES};${CMAKE_CURRENT_SOURCE_DIR}/AssetMixer/Passes/hlsl_shader.py" CACHE INTERNAL "" FORCE)
 
 include("${TEAPACKET_ROOT}/CMakeCommons/CommonEnd.CMake")

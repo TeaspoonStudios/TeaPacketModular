@@ -11,8 +11,7 @@ target_link_libraries(TeaPacket_TestPrograms_Graphics TeaPacket_Extension_STBIma
 TP_AM_BuildAssets(
         TARGET TeaPacket_TestPrograms_Graphics 
         SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/assets/" 
-        DESTINATION "${CMAKE_CURRENT_BINARY_DIR}"
-        ASSET_PLATFORM "STDFile"
-        PARSER_DIRS ${TP_ASSET_MIXER_DIRS}
+        DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/assets/"
+        PASSES ${TP_ASSET_MIXER_PASSES}
         )
 set_target_properties(TeaPacket_TestPrograms_Graphics PROPERTIES CXX_STANDARD 20)
