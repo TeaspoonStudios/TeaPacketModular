@@ -9,9 +9,14 @@ def get_need_files(src_dir : str, dest_dir : str, loaded_modules, rebuild_all : 
     need_files = []
 
     if rebuild_all:
-        return list(Path(src_dir).rglob("*"))
+        return [
+            p for p in Path(src_dir).rglob("*")
+            if not p.is_dir()]
 
     for file in Path(src_dir).rglob("*"):
+        if file.is_dir():
+            continue
+
         rel_src_path = file.relative_to(src_dir)
         rel_dest_path = Path(dest_dir) / rel_src_path
         if (
