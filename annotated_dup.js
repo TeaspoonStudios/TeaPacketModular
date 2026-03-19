@@ -13,8 +13,8 @@ var annotated_dup =
         [ "ShaderVariableType", "structTeaPacket_1_1Graphics_1_1ShaderVariableType.html", "structTeaPacket_1_1Graphics_1_1ShaderVariableType" ],
         [ "Texture", "classTeaPacket_1_1Graphics_1_1Texture.html", "classTeaPacket_1_1Graphics_1_1Texture" ],
         [ "TextureData", "classTeaPacket_1_1Graphics_1_1TextureData.html", "classTeaPacket_1_1Graphics_1_1TextureData" ],
-        [ "TextureParameters", "structTeaPacket_1_1Graphics_1_1TextureParameters.html", "structTeaPacket_1_1Graphics_1_1TextureParameters" ],
         [ "TextureUseFlags", "structTeaPacket_1_1Graphics_1_1TextureUseFlags.html", "structTeaPacket_1_1Graphics_1_1TextureUseFlags" ],
+        [ "TextureParameters", "structTeaPacket_1_1Graphics_1_1TextureParameters.html", "structTeaPacket_1_1Graphics_1_1TextureParameters" ],
         [ "UniformBuffer", "classTeaPacket_1_1Graphics_1_1UniformBuffer.html", "classTeaPacket_1_1Graphics_1_1UniformBuffer" ],
         [ "UniformBufferParameters", "structTeaPacket_1_1Graphics_1_1UniformBufferParameters.html", "structTeaPacket_1_1Graphics_1_1UniformBufferParameters" ],
         [ "Viewport", "classTeaPacket_1_1Graphics_1_1Viewport.html", "classTeaPacket_1_1Graphics_1_1Viewport" ],
@@ -29,7 +29,7 @@ var annotated_dup =
         [ "WindowParameters", "structTeaPacket_1_1Window_1_1WindowParameters.html", "structTeaPacket_1_1Window_1_1WindowParameters" ]
       ] ],
       [ "BorrowedFixedArray", "classTeaPacket_1_1BorrowedFixedArray.html", "classTeaPacket_1_1BorrowedFixedArray" ],
-      [ "BorrowedFixedArray< void >", "classTeaPacket_1_1BorrowedFixedArray_3_01void_01_4.html", "classTeaPacket_1_1BorrowedFixedArray_3_01void_01_4" ],
+      [ "BorrowedFixedArray&lt; void &gt;", "classTeaPacket_1_1BorrowedFixedArray_3_01void_01_4.html", "classTeaPacket_1_1BorrowedFixedArray_3_01void_01_4" ],
       [ "MutexPair", "classTeaPacket_1_1MutexPair.html", "classTeaPacket_1_1MutexPair" ],
       [ "SharedMutexPair", "classTeaPacket_1_1SharedMutexPair.html", "classTeaPacket_1_1SharedMutexPair" ]
     ] ]

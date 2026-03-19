@@ -165,15 +165,30 @@ var namespaceTeaPacket =
       [ "Initialize", "namespaceTeaPacket_1_1Logging.html#a646a90b28a64430eba93e4d37c10dbaa", null ]
     ] ],
     [ "Math", "namespaceTeaPacket_1_1Math.html", "namespaceTeaPacket_1_1Math" ],
+    [ "Random", "namespaceTeaPacket_1_1Random.html", [
+      [ "RandFloat", "namespaceTeaPacket_1_1Random.html#a443de0416aa2c6cd13279ba2a0136387", null ],
+      [ "RandFloatExclusive", "namespaceTeaPacket_1_1Random.html#a3a840c46d3b1dd566d0daed98edf8fd9", null ],
+      [ "RandIntRangeInclusive", "namespaceTeaPacket_1_1Random.html#ad8ebfeb65b26ed58137f27903fe212e4", null ],
+      [ "RandUIntRangeInclusive", "namespaceTeaPacket_1_1Random.html#a640f616d38cf7613c4658e1f49aa860d", null ]
+    ] ],
     [ "System", "namespaceTeaPacket_1_1System.html", [
       [ "DeInitialize", "namespaceTeaPacket_1_1System.html#a6b2dc805bbb7b89bc88e98c29c949f4c", null ],
       [ "Initialize", "namespaceTeaPacket_1_1System.html#a5bda852cd327ceb6f13d6eaaea721306", null ],
       [ "ProcessSystem", "namespaceTeaPacket_1_1System.html#a82a02141aa6881dc0de08cbf59b90b32", null ],
       [ "ShouldRun", "namespaceTeaPacket_1_1System.html#a5c02733fbbac878707059ced26395b1f", null ]
     ] ],
+    [ "Time", "namespaceTeaPacket_1_1Time.html", [
+      [ "DeInitialize", "namespaceTeaPacket_1_1Time.html#a057787e3b7550ab4f306d54ce8f1d9ff", null ],
+      [ "GetCurrentMicroseconds", "namespaceTeaPacket_1_1Time.html#af98d817b7a32b53d94f756b06c9bc759", null ],
+      [ "GetCurrentMilliseconds", "namespaceTeaPacket_1_1Time.html#a48cc9e80dfb4f758cf6bd139bd84cf81", null ],
+      [ "GetCurrentSeconds", "namespaceTeaPacket_1_1Time.html#af487e21f8b3cbba714bfd437524cc643", null ],
+      [ "GetCurrentSecondsDouble", "namespaceTeaPacket_1_1Time.html#ac44effe8c9deb6cea857f0ecdca53826", null ],
+      [ "GetCurrentSecondsFloat", "namespaceTeaPacket_1_1Time.html#af2c88dc1a5aa6e91762050df22002f2b", null ],
+      [ "Initialize", "namespaceTeaPacket_1_1Time.html#a3ed7654b2a842146a60551baed400032", null ]
+    ] ],
     [ "Window", "namespaceTeaPacket_1_1Window.html", "namespaceTeaPacket_1_1Window" ],
     [ "BorrowedFixedArray", "classTeaPacket_1_1BorrowedFixedArray.html", "classTeaPacket_1_1BorrowedFixedArray" ],
-    [ "BorrowedFixedArray< void >", "classTeaPacket_1_1BorrowedFixedArray_3_01void_01_4.html", "classTeaPacket_1_1BorrowedFixedArray_3_01void_01_4" ],
+    [ "BorrowedFixedArray&lt; void &gt;", "classTeaPacket_1_1BorrowedFixedArray_3_01void_01_4.html", "classTeaPacket_1_1BorrowedFixedArray_3_01void_01_4" ],
     [ "MutexPair", "classTeaPacket_1_1MutexPair.html", "classTeaPacket_1_1MutexPair" ],
     [ "SharedMutexPair", "classTeaPacket_1_1SharedMutexPair.html", "classTeaPacket_1_1SharedMutexPair" ],
     [ "TP_DeInitFunction", "namespaceTeaPacket.html#a69b4813f378b592d26cab480ea54f038", null ],
