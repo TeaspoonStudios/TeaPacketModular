@@ -999,7 +999,9 @@ INPUT += ../Modules/Input/Interface/include
 INPUT += ../Modules/Logging/Interface/include
 INPUT += ../Modules/MacroUtils/Interface/include
 INPUT += ../Modules/Math/Interface/include
+INPUT += ../Modules/Random/Interface/include
 INPUT += ../Modules/System/Interface/include
+INPUT += ../Modules/Time/Interface/include
 INPUT += ../Modules/Types/Interface/include
 INPUT += ../Modules/Window/Interface/include
 
