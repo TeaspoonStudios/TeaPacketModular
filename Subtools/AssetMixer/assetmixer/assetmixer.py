@@ -66,7 +66,8 @@ def build_assets(src_dir : str, dest_dir, asset_pass_scripts=None, rebuild_all =
             rel_temp_path = Path(temp_dir) / rel_src_path
 
             rel_temp_path.parent.mkdir(parents=True, exist_ok=True)
-            file.copy(rel_temp_path)
+            shutil.copy(file, rel_temp_path)
+            #file.copy(rel_temp_path)
 
 
         # Run all asset passes
