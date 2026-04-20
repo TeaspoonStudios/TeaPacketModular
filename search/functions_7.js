@@ -10,5 +10,6 @@ var searchData=
   ['isgamepadaxis_7',['IsGamepadAxis',['../namespaceTeaPacket_1_1Input.html#ad22ffab308c228ad983b133c12ec0b4f',1,'TeaPacket::Input']]],
   ['isgamepadbutton_8',['IsGamepadButton',['../namespaceTeaPacket_1_1Input.html#a5a0ae930561def8e25fd0a344f9d4dec',1,'TeaPacket::Input']]],
   ['iskeyboardbutton_9',['IsKeyboardButton',['../namespaceTeaPacket_1_1Input.html#adce4336842020c0e2c7e4e596072a805',1,'TeaPacket::Input']]],
-  ['ismousebutton_10',['IsMouseButton',['../namespaceTeaPacket_1_1Input.html#ae60beebfea1fe071dd17d01aed4b7838',1,'TeaPacket::Input']]]
+  ['ismousebutton_10',['IsMouseButton',['../namespaceTeaPacket_1_1Input.html#ae60beebfea1fe071dd17d01aed4b7838',1,'TeaPacket::Input']]],
+  ['istextureformatsupported_11',['IsTextureFormatSupported',['../namespaceTeaPacket_1_1Graphics.html#a087ac68523471931edcd69d309e52de8',1,'TeaPacket::Graphics']]]
 ];

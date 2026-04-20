@@ -111,7 +111,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4a2468f278a5fb00d246360a43b4c39f31">TeaPacket::Graphics::D24S8</a>
 , <a class="el" href="namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4acfff813d86d447fa2a9c858650ebbb90">TeaPacket::Graphics::R8</a>
 , <br />
-&#160;&#160;<a class="el" href="namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4ab50339a10e1de285ac99d4c3990b8693">TeaPacket::Graphics::NONE</a>
+&#160;&#160;<a class="el" href="namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4acda522d4353b166cc2dee84673307b4e">TeaPacket::Graphics::R1</a>
+, <a class="el" href="namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4ab50339a10e1de285ac99d4c3990b8693">TeaPacket::Graphics::NONE</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ce6d7b636e492d8647a50bbaf4015e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A format for a texture. Determines how the data is interpreted on creation, and how much space the format takes up on the GPU.  <a href="namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4">More...</a><br /></td></tr>
@@ -122,8 +123,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a56a3bc39cbefda1829f94a0afa58f5f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of each channel of a format.  <br /></td></tr>
 <tr class="memitem:a6f6bb9ccf48fbdc22e1533ad40bf6e45" id="r_a6f6bb9ccf48fbdc22e1533ad40bf6e45"><td class="memItemLeft">constexpr uint8_t&#160;</td><td class="memItemRight"><a class="el" href="namespaceTeaPacket_1_1Graphics.html#a6f6bb9ccf48fbdc22e1533ad40bf6e45">TeaPacket::Graphics::GetTextureFormatBPP</a> (const <a class="el" href="namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a> format)</td></tr>
 <tr class="memdesc:a6f6bb9ccf48fbdc22e1533ad40bf6e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Bits-Per-Pixel of a texture format.  <br /></td></tr>
-<tr class="memitem:aab7bcaa02437b8c6937d65caa6328f90" id="r_aab7bcaa02437b8c6937d65caa6328f90"><td class="memItemLeft">constexpr uint8_t&#160;</td><td class="memItemRight"><a class="el" href="namespaceTeaPacket_1_1Graphics.html#aab7bcaa02437b8c6937d65caa6328f90">TeaPacket::Graphics::GetTextureFormatBytesPerPixel</a> (const <a class="el" href="namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a> format)</td></tr>
-<tr class="memdesc:aab7bcaa02437b8c6937d65caa6328f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Bytes-Per-Pixel of a texture format.  <br /></td></tr>
+<tr class="memitem:a8719cfbbb7ff1a7c2ec7974df664eade" id="r_a8719cfbbb7ff1a7c2ec7974df664eade"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="namespaceTeaPacket_1_1Graphics.html#a8719cfbbb7ff1a7c2ec7974df664eade">TeaPacket::Graphics::GetTextureFormatBytesPerPixel</a> (const <a class="el" href="namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a> format)</td></tr>
+<tr class="memdesc:a8719cfbbb7ff1a7c2ec7974df664eade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Bytes-Per-Pixel of a texture format.  <br /></td></tr>
+<tr class="memitem:a087ac68523471931edcd69d309e52de8" id="r_a087ac68523471931edcd69d309e52de8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespaceTeaPacket_1_1Graphics.html#a087ac68523471931edcd69d309e52de8">TeaPacket::Graphics::IsTextureFormatSupported</a> (<a class="el" href="namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a> format)</td></tr>
+<tr class="memitem:ae2016bda6d1ad4e7dc5091926ea07568" id="r_ae2016bda6d1ad4e7dc5091926ea07568"><td class="memItemLeft"><a class="el" href="namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a>&#160;</td><td class="memItemRight"><a class="el" href="namespaceTeaPacket_1_1Graphics.html#ae2016bda6d1ad4e7dc5091926ea07568">TeaPacket::Graphics::ConvertTextureToSupportedFormat</a> (std::vector&lt; unsigned char &gt; &amp;data, <a class="el" href="namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a> sourceFormat)</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

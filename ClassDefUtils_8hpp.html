@@ -103,6 +103,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a89f7e183e0819b08df14be6f58abc6ea" id="r_a89f7e183e0819b08df14be6f58abc6ea"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a89f7e183e0819b08df14be6f58abc6ea">TP_OBJ_UNDEFINED_SETTER</a>(member,  displayName)</td></tr>
 <tr class="memitem:a74df80ffcabfd7f566329d54c59f5b85" id="r_a74df80ffcabfd7f566329d54c59f5b85"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a74df80ffcabfd7f566329d54c59f5b85">TP_OBJ_GETTER_UNDEF_SETTER</a>(member,  displayName)</td></tr>
 <tr class="memitem:ad54801a5a6f37970f7efb69930f3944b" id="r_ad54801a5a6f37970f7efb69930f3944b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad54801a5a6f37970f7efb69930f3944b">TP_OBJ_GETTER_REF_UNDEF_SETTER</a>(member,  displayName)</td></tr>
+<tr class="memitem:ae74cc0a34e4907f3ac1595cebcebc7f4" id="r_ae74cc0a34e4907f3ac1595cebcebc7f4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ae74cc0a34e4907f3ac1595cebcebc7f4">TP_OBJ_MOVE_NO_COPY</a>(className)</td></tr>
+<tr class="memitem:a6f493ac1bc1f64732f63838f4dd8df72" id="r_a6f493ac1bc1f64732f63838f4dd8df72"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6f493ac1bc1f64732f63838f4dd8df72">TP_OBJ_IMPL_MOVE_DEFAULT</a>(className)</td></tr>
+<tr class="memitem:a86cb7a06046eaf9a48e020af94445c84" id="r_a86cb7a06046eaf9a48e020af94445c84"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a86cb7a06046eaf9a48e020af94445c84">TP_OBJ_IMPL_DESTRUCTOR_MOVE_DEFAULT</a>(className)</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="a2d56976e9df778d5fa72b55552f75c28" name="a2d56976e9df778d5fa72b55552f75c28"></a>
@@ -203,6 +206,65 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a2d56976e9df778d5fa72b55552f75c28">TP_OBJ_GETTER</a>(member, displayName) \</div>
 <div class="line">TP_OBJ_UNDEFINED_SETTER(member, displayName)</div>
 <div class="ttc" id="aClassDefUtils_8hpp_html_a2d56976e9df778d5fa72b55552f75c28"><div class="ttname"><a href="#a2d56976e9df778d5fa72b55552f75c28">TP_OBJ_GETTER</a></div><div class="ttdeci">#define TP_OBJ_GETTER(member, displayName)</div><div class="ttdoc">An inline macro for object getters.</div><div class="ttdef"><b>Definition</b> ClassDefUtils.hpp:5</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a86cb7a06046eaf9a48e020af94445c84" name="a86cb7a06046eaf9a48e020af94445c84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86cb7a06046eaf9a48e020af94445c84">&#9670;&#160;</a></span>TP_OBJ_IMPL_DESTRUCTOR_MOVE_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TP_OBJ_IMPL_DESTRUCTOR_MOVE_DEFAULT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>className</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">className::~className() = <span class="keywordflow">default</span>; \</div>
+<div class="line">TP_OBJ_IMPL_MOVE_DEFAULT(className)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6f493ac1bc1f64732f63838f4dd8df72" name="a6f493ac1bc1f64732f63838f4dd8df72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f493ac1bc1f64732f63838f4dd8df72">&#9670;&#160;</a></span>TP_OBJ_IMPL_MOVE_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TP_OBJ_IMPL_MOVE_DEFAULT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>className</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">className::className(className&amp;&amp; other) <span class="keyword">noexcept</span> = <span class="keywordflow">default</span>; \</div>
+<div class="line">className&amp; className::operator=(className&amp;&amp; other) <span class="keyword">noexcept</span> = <span class="keywordflow">default</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae74cc0a34e4907f3ac1595cebcebc7f4" name="ae74cc0a34e4907f3ac1595cebcebc7f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae74cc0a34e4907f3ac1595cebcebc7f4">&#9670;&#160;</a></span>TP_OBJ_MOVE_NO_COPY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TP_OBJ_MOVE_NO_COPY</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>className</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">className(<span class="keyword">const</span> className&amp; other) = <span class="keyword">delete</span>; \</div>
+<div class="line">className&amp; operator=(<span class="keyword">const</span> className&amp; other) = <span class="keyword">delete</span>; \</div>
+<div class="line">className(className&amp;&amp; other) <span class="keyword">noexcept</span>; \</div>
+<div class="line">className&amp; operator=(className&amp;&amp; other) <span class="keyword">noexcept</span>;</div>
 </div><!-- fragment -->
 </div>
 </div>

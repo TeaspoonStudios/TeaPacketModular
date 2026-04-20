@@ -104,9 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aad7aebc4440cc2032a540862a3b4058d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the width of the texture.  <br /></td></tr>
 <tr class="memitem:a739b2f88f6ec06dc9ed5790e53c84b9f" id="r_a739b2f88f6ec06dc9ed5790e53c84b9f"><td class="memItemLeft">uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a739b2f88f6ec06dc9ed5790e53c84b9f">GetHeight</a> () const</td></tr>
 <tr class="memdesc:a739b2f88f6ec06dc9ed5790e53c84b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the height of the texture.  <br /></td></tr>
+<tr class="memitem:a338a196f14da0eb74000364eaee1e1df" id="r_a338a196f14da0eb74000364eaee1e1df"><td class="memItemLeft"><a class="el" href="namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a>&#160;</td><td class="memItemRight"><a class="el" href="#a338a196f14da0eb74000364eaee1e1df">GetFormat</a> () const</td></tr>
 <tr class="memitem:aa57562f957ff6ec7127cc2c2f2e6fee8" id="r_aa57562f957ff6ec7127cc2c2f2e6fee8"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aa57562f957ff6ec7127cc2c2f2e6fee8">Texture</a> (const <a class="el" href="structTeaPacket_1_1Graphics_1_1TextureParameters.html">TextureParameters</a> &amp;parameters)</td></tr>
 <tr class="memdesc:aa57562f957ff6ec7127cc2c2f2e6fee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a texture using parameters.  <br /></td></tr>
-<tr class="memitem:ad01bc2fde22738e9bdfee184adfd114e" id="r_ad01bc2fde22738e9bdfee184adfd114e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad01bc2fde22738e9bdfee184adfd114e">Texture</a> (Texture &amp;&amp;source) noexcept</td></tr>
 <tr class="memitem:a94b488c1f041c18a96f6f78b0754c3fa" id="r_a94b488c1f041c18a96f6f78b0754c3fa"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a94b488c1f041c18a96f6f78b0754c3fa">~Texture</a> ()</td></tr>
 <tr class="memitem:a98b7c44779ff39e82d4361b214342d32" id="r_a98b7c44779ff39e82d4361b214342d32"><td class="memItemLeft"><a class="el" href="classTeaPacket_1_1Graphics_1_1TextureData.html">TextureData</a>&#160;</td><td class="memItemRight"><a class="el" href="#a98b7c44779ff39e82d4361b214342d32">GetData</a> () const</td></tr>
 <tr class="memdesc:a98b7c44779ff39e82d4361b214342d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pixel data of this texture. Only works if cpuReadable is set when this texture is created.  <br /></td></tr>
@@ -122,7 +122,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Represents a texture on the GPU. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa57562f957ff6ec7127cc2c2f2e6fee8" name="aa57562f957ff6ec7127cc2c2f2e6fee8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa57562f957ff6ec7127cc2c2f2e6fee8">&#9670;&#160;</a></span>Texture() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa57562f957ff6ec7127cc2c2f2e6fee8">&#9670;&#160;</a></span>Texture()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,31 +145,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a texture using parameters. </p>
-
-</div>
-</div>
-<a id="ad01bc2fde22738e9bdfee184adfd114e" name="ad01bc2fde22738e9bdfee184adfd114e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad01bc2fde22738e9bdfee184adfd114e">&#9670;&#160;</a></span>Texture() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TeaPacket::Graphics::Texture::Texture </td>
-          <td>(</td>
-          <td class="paramtype">Texture &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>source</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -218,6 +193,31 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a338a196f14da0eb74000364eaee1e1df" name="a338a196f14da0eb74000364eaee1e1df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a338a196f14da0eb74000364eaee1e1df">&#9670;&#160;</a></span>GetFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a> TeaPacket::Graphics::Texture::GetFormat </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a739b2f88f6ec06dc9ed5790e53c84b9f" name="a739b2f88f6ec06dc9ed5790e53c84b9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a739b2f88f6ec06dc9ed5790e53c84b9f">&#9670;&#160;</a></span>GetHeight()</h2>
 
@@ -236,7 +236,7 @@ Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -263,7 +263,7 @@ Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

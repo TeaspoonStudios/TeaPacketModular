@@ -9,7 +9,7 @@ var searchData=
   ['teapacket_3a_3amath_6',['Math',['../namespaceTeaPacket_1_1Math.html',1,'TeaPacket']]],
   ['teapacket_3a_3asystem_7',['System',['../namespaceTeaPacket_1_1System.html',1,'TeaPacket']]],
   ['teapacket_3a_3awindow_8',['Window',['../namespaceTeaPacket_1_1Window.html',1,'TeaPacket']]],
-  ['texture_9',['Texture',['../classTeaPacket_1_1Graphics_1_1Texture.html',1,'TeaPacket::Graphics::Texture'],['../classTeaPacket_1_1Graphics_1_1Texture.html#aa57562f957ff6ec7127cc2c2f2e6fee8',1,'TeaPacket::Graphics::Texture::Texture(const TextureParameters &amp;parameters)'],['../classTeaPacket_1_1Graphics_1_1Texture.html#ad01bc2fde22738e9bdfee184adfd114e',1,'TeaPacket::Graphics::Texture::Texture(Texture &amp;&amp;source) noexcept']]],
+  ['texture_9',['Texture',['../classTeaPacket_1_1Graphics_1_1Texture.html',1,'TeaPacket::Graphics::Texture'],['../classTeaPacket_1_1Graphics_1_1Texture.html#aa57562f957ff6ec7127cc2c2f2e6fee8',1,'TeaPacket::Graphics::Texture::Texture()']]],
   ['texture_2ehpp_10',['Texture.hpp',['../Texture_8hpp.html',1,'']]],
   ['textureavailablemode_11',['TextureAvailableMode',['../namespaceTeaPacket_1_1Graphics.html#aa65ec3f6a0cf5637fc2e4ea85ca6d06a',1,'TeaPacket::Graphics']]],
   ['texturedata_12',['TextureData',['../classTeaPacket_1_1Graphics_1_1TextureData.html',1,'TeaPacket::Graphics::TextureData'],['../classTeaPacket_1_1Graphics_1_1TextureData.html#ad8b274bf3f68cf301f7e056b3bcbf175',1,'TeaPacket::Graphics::TextureData::TextureData()']]],
@@ -32,10 +32,13 @@ var searchData=
   ['tp_5fobj_5fgetter_5fref_29',['TP_OBJ_GETTER_REF',['../ClassDefUtils_8hpp.html#a19d9a2f8bad60466ccebdfa4737e190f',1,'ClassDefUtils.hpp']]],
   ['tp_5fobj_5fgetter_5fref_5fundef_5fsetter_30',['TP_OBJ_GETTER_REF_UNDEF_SETTER',['../ClassDefUtils_8hpp.html#ad54801a5a6f37970f7efb69930f3944b',1,'ClassDefUtils.hpp']]],
   ['tp_5fobj_5fgetter_5fundef_5fsetter_31',['TP_OBJ_GETTER_UNDEF_SETTER',['../ClassDefUtils_8hpp.html#a74df80ffcabfd7f566329d54c59f5b85',1,'ClassDefUtils.hpp']]],
-  ['tp_5fobj_5fundefined_5fsetter_32',['TP_OBJ_UNDEFINED_SETTER',['../ClassDefUtils_8hpp.html#a89f7e183e0819b08df14be6f58abc6ea',1,'ClassDefUtils.hpp']]],
-  ['tp_5frunbeforemain_33',['TP_RunBeforeMain',['../SpecialRunners_8hpp.html#ae339ef335ac2a427bf56bb1f4a90936e',1,'SpecialRunners.hpp']]],
-  ['tp_5fvec_5falias_34',['TP_VEC_ALIAS',['../Vector_8hpp.html#aea12a337ea36b03a7a1ae9d4a8e9b5bd',1,'Vector.hpp']]],
-  ['tp_5fvec_5fmath_5foperator_35',['TP_VEC_MATH_OPERATOR',['../Vector_8hpp.html#a3cc5db01cc3a4179cc13b9c4fa6bc356',1,'Vector.hpp']]],
-  ['tp_5fvector_5ftype_5fgen_36',['TP_VECTOR_TYPE_GEN',['../Vector_8hpp.html#a2ff70f17092a249d5cfb7692498a1f3b',1,'Vector.hpp']]],
-  ['tp_5fvector_5ftype_5fgen_5fsolo_37',['TP_VECTOR_TYPE_GEN_SOLO',['../Vector_8hpp.html#a39a31a1d8d444b53780c9c367d5847d3',1,'Vector.hpp']]]
+  ['tp_5fobj_5fimpl_5fdestructor_5fmove_5fdefault_32',['TP_OBJ_IMPL_DESTRUCTOR_MOVE_DEFAULT',['../ClassDefUtils_8hpp.html#a86cb7a06046eaf9a48e020af94445c84',1,'ClassDefUtils.hpp']]],
+  ['tp_5fobj_5fimpl_5fmove_5fdefault_33',['TP_OBJ_IMPL_MOVE_DEFAULT',['../ClassDefUtils_8hpp.html#a6f493ac1bc1f64732f63838f4dd8df72',1,'ClassDefUtils.hpp']]],
+  ['tp_5fobj_5fmove_5fno_5fcopy_34',['TP_OBJ_MOVE_NO_COPY',['../ClassDefUtils_8hpp.html#ae74cc0a34e4907f3ac1595cebcebc7f4',1,'ClassDefUtils.hpp']]],
+  ['tp_5fobj_5fundefined_5fsetter_35',['TP_OBJ_UNDEFINED_SETTER',['../ClassDefUtils_8hpp.html#a89f7e183e0819b08df14be6f58abc6ea',1,'ClassDefUtils.hpp']]],
+  ['tp_5frunbeforemain_36',['TP_RunBeforeMain',['../SpecialRunners_8hpp.html#ae339ef335ac2a427bf56bb1f4a90936e',1,'SpecialRunners.hpp']]],
+  ['tp_5fvec_5falias_37',['TP_VEC_ALIAS',['../Vector_8hpp.html#aea12a337ea36b03a7a1ae9d4a8e9b5bd',1,'Vector.hpp']]],
+  ['tp_5fvec_5fmath_5foperator_38',['TP_VEC_MATH_OPERATOR',['../Vector_8hpp.html#a3cc5db01cc3a4179cc13b9c4fa6bc356',1,'Vector.hpp']]],
+  ['tp_5fvector_5ftype_5fgen_39',['TP_VECTOR_TYPE_GEN',['../Vector_8hpp.html#a2ff70f17092a249d5cfb7692498a1f3b',1,'Vector.hpp']]],
+  ['tp_5fvector_5ftype_5fgen_5fsolo_40',['TP_VECTOR_TYPE_GEN_SOLO',['../Vector_8hpp.html#a39a31a1d8d444b53780c9c367d5847d3',1,'Vector.hpp']]]
 ];

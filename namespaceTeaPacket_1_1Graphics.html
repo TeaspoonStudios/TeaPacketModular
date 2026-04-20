@@ -148,7 +148,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4a2468f278a5fb00d246360a43b4c39f31">D24S8</a>
 , <a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4acfff813d86d447fa2a9c858650ebbb90">R8</a>
 , <br />
-&#160;&#160;<a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4ab50339a10e1de285ac99d4c3990b8693">NONE</a>
+&#160;&#160;<a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4acda522d4353b166cc2dee84673307b4e">R1</a>
+, <a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4ab50339a10e1de285ac99d4c3990b8693">NONE</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ce6d7b636e492d8647a50bbaf4015e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A format for a texture. Determines how the data is interpreted on creation, and how much space the format takes up on the GPU.  <a href="#a7ce6d7b636e492d8647a50bbaf4015e4">More...</a><br /></td></tr>
@@ -180,8 +181,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a56a3bc39cbefda1829f94a0afa58f5f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of each channel of a format.  <br /></td></tr>
 <tr class="memitem:a6f6bb9ccf48fbdc22e1533ad40bf6e45" id="r_a6f6bb9ccf48fbdc22e1533ad40bf6e45"><td class="memItemLeft">constexpr uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a6f6bb9ccf48fbdc22e1533ad40bf6e45">GetTextureFormatBPP</a> (const <a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a> format)</td></tr>
 <tr class="memdesc:a6f6bb9ccf48fbdc22e1533ad40bf6e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Bits-Per-Pixel of a texture format.  <br /></td></tr>
-<tr class="memitem:aab7bcaa02437b8c6937d65caa6328f90" id="r_aab7bcaa02437b8c6937d65caa6328f90"><td class="memItemLeft">constexpr uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#aab7bcaa02437b8c6937d65caa6328f90">GetTextureFormatBytesPerPixel</a> (const <a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a> format)</td></tr>
-<tr class="memdesc:aab7bcaa02437b8c6937d65caa6328f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Bytes-Per-Pixel of a texture format.  <br /></td></tr>
+<tr class="memitem:a8719cfbbb7ff1a7c2ec7974df664eade" id="r_a8719cfbbb7ff1a7c2ec7974df664eade"><td class="memItemLeft">constexpr float&#160;</td><td class="memItemRight"><a class="el" href="#a8719cfbbb7ff1a7c2ec7974df664eade">GetTextureFormatBytesPerPixel</a> (const <a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a> format)</td></tr>
+<tr class="memdesc:a8719cfbbb7ff1a7c2ec7974df664eade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Bytes-Per-Pixel of a texture format.  <br /></td></tr>
+<tr class="memitem:a087ac68523471931edcd69d309e52de8" id="r_a087ac68523471931edcd69d309e52de8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a087ac68523471931edcd69d309e52de8">IsTextureFormatSupported</a> (<a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a> format)</td></tr>
+<tr class="memitem:ae2016bda6d1ad4e7dc5091926ea07568" id="r_ae2016bda6d1ad4e7dc5091926ea07568"><td class="memItemLeft"><a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae2016bda6d1ad4e7dc5091926ea07568">ConvertTextureToSupportedFormat</a> (std::vector&lt; unsigned char &gt; &amp;data, <a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a> sourceFormat)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A module for rendering and presenting graphics to the user. </p>
@@ -309,6 +312,8 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a7ce6d7b636e492d8647a50bbaf4015e4acfff813d86d447fa2a9c858650ebbb90" name="a7ce6d7b636e492d8647a50bbaf4015e4acfff813d86d447fa2a9c858650ebbb90"></a>R8&#160;</td><td class="fielddoc"><p>An 8 bpp texture for 8 bits of red. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a7ce6d7b636e492d8647a50bbaf4015e4acda522d4353b166cc2dee84673307b4e" name="a7ce6d7b636e492d8647a50bbaf4015e4acda522d4353b166cc2dee84673307b4e"></a>R1&#160;</td><td class="fielddoc"><p>A 1bpp texture for 1 bit of red. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a7ce6d7b636e492d8647a50bbaf4015e4ab50339a10e1de285ac99d4c3990b8693" name="a7ce6d7b636e492d8647a50bbaf4015e4ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -347,6 +352,27 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="ae2016bda6d1ad4e7dc5091926ea07568" name="ae2016bda6d1ad4e7dc5091926ea07568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2016bda6d1ad4e7dc5091926ea07568">&#9670;&#160;</a></span>ConvertTextureToSupportedFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a> TeaPacket::Graphics::ConvertTextureToSupportedFormat </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; unsigned char &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a></td>          <td class="paramname"><span class="paramname"><em>sourceFormat</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3b5622e7f6d8786a9b49d1da03aaaa11" name="a3b5622e7f6d8786a9b49d1da03aaaa11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b5622e7f6d8786a9b49d1da03aaaa11">&#9670;&#160;</a></span>DeInitialize()</h2>
 
@@ -419,8 +445,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aab7bcaa02437b8c6937d65caa6328f90" name="aab7bcaa02437b8c6937d65caa6328f90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab7bcaa02437b8c6937d65caa6328f90">&#9670;&#160;</a></span>GetTextureFormatBytesPerPixel()</h2>
+<a id="a8719cfbbb7ff1a7c2ec7974df664eade" name="a8719cfbbb7ff1a7c2ec7974df664eade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8719cfbbb7ff1a7c2ec7974df664eade">&#9670;&#160;</a></span>GetTextureFormatBytesPerPixel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -429,7 +455,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t TeaPacket::Graphics::GetTextureFormatBytesPerPixel </td>
+          <td class="memname">float TeaPacket::Graphics::GetTextureFormatBytesPerPixel </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a></td>          <td class="paramname"><span class="paramname"><em>format</em></span></td><td>)</td>
           <td></td>
@@ -489,6 +515,31 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the <a class="el" href="namespaceTeaPacket_1_1Graphics.html" title="A module for rendering and presenting graphics to the user.">Graphics</a> API. Must be called before any other <a class="el" href="namespaceTeaPacket_1_1Graphics.html" title="A module for rendering and presenting graphics to the user.">Graphics</a> functions. </p>
+
+</div>
+</div>
+<a id="a087ac68523471931edcd69d309e52de8" name="a087ac68523471931edcd69d309e52de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a087ac68523471931edcd69d309e52de8">&#9670;&#160;</a></span>IsTextureFormatSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TeaPacket::Graphics::IsTextureFormatSupported </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a7ce6d7b636e492d8647a50bbaf4015e4">TextureFormat</a></td>          <td class="paramname"><span class="paramname"><em>format</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

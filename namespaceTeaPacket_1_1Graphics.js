@@ -37,6 +37,7 @@ var namespaceTeaPacket_1_1Graphics =
       [ "BGRA8", "namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4a508ecc95f0c676df4a7dfe11beb0d573", null ],
       [ "D24S8", "namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4a2468f278a5fb00d246360a43b4c39f31", null ],
       [ "R8", "namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4acfff813d86d447fa2a9c858650ebbb90", null ],
+      [ "R1", "namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4acda522d4353b166cc2dee84673307b4e", null ],
       [ "NONE", "namespaceTeaPacket_1_1Graphics.html#a7ce6d7b636e492d8647a50bbaf4015e4ab50339a10e1de285ac99d4c3990b8693", null ]
     ] ],
     [ "TextureWrapMode", "namespaceTeaPacket_1_1Graphics.html#a2c0e738ccc0722c3f98d7775d1f63491", [
@@ -44,11 +45,13 @@ var namespaceTeaPacket_1_1Graphics =
       [ "Clamp", "namespaceTeaPacket_1_1Graphics.html#a2c0e738ccc0722c3f98d7775d1f63491a08825280e3f8137556325061ba67ff8c", null ],
       [ "Mirror", "namespaceTeaPacket_1_1Graphics.html#a2c0e738ccc0722c3f98d7775d1f63491a2403def5083f02105e7802b3b315681e", null ]
     ] ],
+    [ "ConvertTextureToSupportedFormat", "namespaceTeaPacket_1_1Graphics.html#ae2016bda6d1ad4e7dc5091926ea07568", null ],
     [ "DeInitialize", "namespaceTeaPacket_1_1Graphics.html#a3b5622e7f6d8786a9b49d1da03aaaa11", null ],
     [ "DrawMesh", "namespaceTeaPacket_1_1Graphics.html#a5f8ce60d3fccb46f5977c7c4ee64aabc", null ],
     [ "GetTextureFormatBPP", "namespaceTeaPacket_1_1Graphics.html#a6f6bb9ccf48fbdc22e1533ad40bf6e45", null ],
-    [ "GetTextureFormatBytesPerPixel", "namespaceTeaPacket_1_1Graphics.html#aab7bcaa02437b8c6937d65caa6328f90", null ],
+    [ "GetTextureFormatBytesPerPixel", "namespaceTeaPacket_1_1Graphics.html#a8719cfbbb7ff1a7c2ec7974df664eade", null ],
     [ "GetTextureFormatChannelSizes", "namespaceTeaPacket_1_1Graphics.html#a56a3bc39cbefda1829f94a0afa58f5f9", null ],
     [ "Initialize", "namespaceTeaPacket_1_1Graphics.html#af893900d792015be0743d507f5ed8b29", null ],
+    [ "IsTextureFormatSupported", "namespaceTeaPacket_1_1Graphics.html#a087ac68523471931edcd69d309e52de8", null ],
     [ "SetDepthEnabled", "namespaceTeaPacket_1_1Graphics.html#aa3cb29fa50c847cf527cd9b8c55660cd", null ]
 ];

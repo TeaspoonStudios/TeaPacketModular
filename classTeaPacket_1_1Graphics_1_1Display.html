@@ -109,6 +109,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6c7e5f1e9a8a56be8dc651145dfc2af" id="r_ab6c7e5f1e9a8a56be8dc651145dfc2af"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab6c7e5f1e9a8a56be8dc651145dfc2af">Display</a> (const <a class="el" href="structTeaPacket_1_1Graphics_1_1DisplayParameters.html">DisplayParameters</a> &amp;parameters)</td></tr>
 <tr class="memdesc:ab6c7e5f1e9a8a56be8dc651145dfc2af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a display from parameters.  <br /></td></tr>
 <tr class="memitem:acc88a752f899ec5aa6a2bc0bb857723d" id="r_acc88a752f899ec5aa6a2bc0bb857723d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acc88a752f899ec5aa6a2bc0bb857723d">~Display</a> ()</td></tr>
+<tr class="memitem:afb7e374f83a2ebac910b261bf4c48212" id="r_afb7e374f83a2ebac910b261bf4c48212"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#afb7e374f83a2ebac910b261bf4c48212">Display</a> (const Display &amp;other)=delete</td></tr>
+<tr class="memitem:a73957293a5610b8b24c7aa16338500ae" id="r_a73957293a5610b8b24c7aa16338500ae"><td class="memItemLeft"><a class="el" href="#ab6c7e5f1e9a8a56be8dc651145dfc2af">Display</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a73957293a5610b8b24c7aa16338500ae">operator=</a> (const <a class="el" href="#ab6c7e5f1e9a8a56be8dc651145dfc2af">Display</a> &amp;other)=delete</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -135,7 +137,7 @@ Public Attributes</h2></td></tr>
 <p>On PC-based implementations, this typically represents a window. On non-PC implementations, this typically represents a screen. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab6c7e5f1e9a8a56be8dc651145dfc2af" name="ab6c7e5f1e9a8a56be8dc651145dfc2af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6c7e5f1e9a8a56be8dc651145dfc2af">&#9670;&#160;</a></span>Display()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c7e5f1e9a8a56be8dc651145dfc2af">&#9670;&#160;</a></span>Display() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,6 +176,31 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb7e374f83a2ebac910b261bf4c48212" name="afb7e374f83a2ebac910b261bf4c48212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb7e374f83a2ebac910b261bf4c48212">&#9670;&#160;</a></span>Display() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TeaPacket::Graphics::Display::Display </td>
+          <td>(</td>
+          <td class="paramtype">const Display &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -416,6 +443,31 @@ Public Attributes</h2></td></tr>
 
 <p>Creates any number of displays, based on the platform. </p>
 <p>This function will always create at least 1 display. On PC platforms, this function will create a single window to be rendered to. On other platforms, this will create a <a class="el" href="classTeaPacket_1_1Graphics_1_1Display.html" title="Represents a user-viewable area.">Display</a> for every screen that can be rendered to. </p>
+
+</div>
+</div>
+<a id="a73957293a5610b8b24c7aa16338500ae" name="a73957293a5610b8b24c7aa16338500ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73957293a5610b8b24c7aa16338500ae">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ab6c7e5f1e9a8a56be8dc651145dfc2af">Display</a> &amp; TeaPacket::Graphics::Display::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ab6c7e5f1e9a8a56be8dc651145dfc2af">Display</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

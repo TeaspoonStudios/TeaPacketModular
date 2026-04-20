@@ -7,10 +7,13 @@ var searchData=
   ['tp_5fobj_5fgetter_5fref_4',['TP_OBJ_GETTER_REF',['../ClassDefUtils_8hpp.html#a19d9a2f8bad60466ccebdfa4737e190f',1,'ClassDefUtils.hpp']]],
   ['tp_5fobj_5fgetter_5fref_5fundef_5fsetter_5',['TP_OBJ_GETTER_REF_UNDEF_SETTER',['../ClassDefUtils_8hpp.html#ad54801a5a6f37970f7efb69930f3944b',1,'ClassDefUtils.hpp']]],
   ['tp_5fobj_5fgetter_5fundef_5fsetter_6',['TP_OBJ_GETTER_UNDEF_SETTER',['../ClassDefUtils_8hpp.html#a74df80ffcabfd7f566329d54c59f5b85',1,'ClassDefUtils.hpp']]],
-  ['tp_5fobj_5fundefined_5fsetter_7',['TP_OBJ_UNDEFINED_SETTER',['../ClassDefUtils_8hpp.html#a89f7e183e0819b08df14be6f58abc6ea',1,'ClassDefUtils.hpp']]],
-  ['tp_5frunbeforemain_8',['TP_RunBeforeMain',['../SpecialRunners_8hpp.html#ae339ef335ac2a427bf56bb1f4a90936e',1,'SpecialRunners.hpp']]],
-  ['tp_5fvec_5falias_9',['TP_VEC_ALIAS',['../Vector_8hpp.html#aea12a337ea36b03a7a1ae9d4a8e9b5bd',1,'Vector.hpp']]],
-  ['tp_5fvec_5fmath_5foperator_10',['TP_VEC_MATH_OPERATOR',['../Vector_8hpp.html#a3cc5db01cc3a4179cc13b9c4fa6bc356',1,'Vector.hpp']]],
-  ['tp_5fvector_5ftype_5fgen_11',['TP_VECTOR_TYPE_GEN',['../Vector_8hpp.html#a2ff70f17092a249d5cfb7692498a1f3b',1,'Vector.hpp']]],
-  ['tp_5fvector_5ftype_5fgen_5fsolo_12',['TP_VECTOR_TYPE_GEN_SOLO',['../Vector_8hpp.html#a39a31a1d8d444b53780c9c367d5847d3',1,'Vector.hpp']]]
+  ['tp_5fobj_5fimpl_5fdestructor_5fmove_5fdefault_7',['TP_OBJ_IMPL_DESTRUCTOR_MOVE_DEFAULT',['../ClassDefUtils_8hpp.html#a86cb7a06046eaf9a48e020af94445c84',1,'ClassDefUtils.hpp']]],
+  ['tp_5fobj_5fimpl_5fmove_5fdefault_8',['TP_OBJ_IMPL_MOVE_DEFAULT',['../ClassDefUtils_8hpp.html#a6f493ac1bc1f64732f63838f4dd8df72',1,'ClassDefUtils.hpp']]],
+  ['tp_5fobj_5fmove_5fno_5fcopy_9',['TP_OBJ_MOVE_NO_COPY',['../ClassDefUtils_8hpp.html#ae74cc0a34e4907f3ac1595cebcebc7f4',1,'ClassDefUtils.hpp']]],
+  ['tp_5fobj_5fundefined_5fsetter_10',['TP_OBJ_UNDEFINED_SETTER',['../ClassDefUtils_8hpp.html#a89f7e183e0819b08df14be6f58abc6ea',1,'ClassDefUtils.hpp']]],
+  ['tp_5frunbeforemain_11',['TP_RunBeforeMain',['../SpecialRunners_8hpp.html#ae339ef335ac2a427bf56bb1f4a90936e',1,'SpecialRunners.hpp']]],
+  ['tp_5fvec_5falias_12',['TP_VEC_ALIAS',['../Vector_8hpp.html#aea12a337ea36b03a7a1ae9d4a8e9b5bd',1,'Vector.hpp']]],
+  ['tp_5fvec_5fmath_5foperator_13',['TP_VEC_MATH_OPERATOR',['../Vector_8hpp.html#a3cc5db01cc3a4179cc13b9c4fa6bc356',1,'Vector.hpp']]],
+  ['tp_5fvector_5ftype_5fgen_14',['TP_VECTOR_TYPE_GEN',['../Vector_8hpp.html#a2ff70f17092a249d5cfb7692498a1f3b',1,'Vector.hpp']]],
+  ['tp_5fvector_5ftype_5fgen_5fsolo_15',['TP_VECTOR_TYPE_GEN_SOLO',['../Vector_8hpp.html#a39a31a1d8d444b53780c9c367d5847d3',1,'Vector.hpp']]]
 ];

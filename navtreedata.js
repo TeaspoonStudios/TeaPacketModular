@@ -60,8 +60,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "BorrowedFixedArray_8hpp.html",
-"classTeaPacket_1_1Math_1_1Vector.html",
-"namespaceTeaPacket_1_1Input.html#a559feeeb64ad6e2d815b09b7fd809cb6a5df3f2093c573770f204c77c0dd75a31"
+"classTeaPacket_1_1Graphics_1_1Viewport.html#af02dc2ede3d4d57341c850fbcb27a8c6",
+"namespaceTeaPacket_1_1Input.html#a559feeeb64ad6e2d815b09b7fd809cb6a580b9fe7ee37a43b46a59801b1a37941"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

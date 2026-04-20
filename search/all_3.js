@@ -9,7 +9,8 @@ var searchData=
   ['controllerslot_6',['ControllerSlot',['../namespaceTeaPacket_1_1Input.html#a97f0639ec0e405de3692877fa2cff022',1,'TeaPacket::Input']]],
   ['controllertype_7',['ControllerType',['../namespaceTeaPacket_1_1Input.html#a0d192ef59200473adfbead3bbd1db91b',1,'TeaPacket::Input']]],
   ['controllertype_2ehpp_8',['ControllerType.hpp',['../ControllerType_8hpp.html',1,'']]],
-  ['core_2ehpp_9',['Core.hpp',['../Core_8hpp.html',1,'']]],
-  ['cpu_10',['CPU',['../namespaceTeaPacket_1_1Graphics.html#aa65ec3f6a0cf5637fc2e4ea85ca6d06aa2b55387dd066c5bac646ac61543d152d',1,'TeaPacket::Graphics']]],
-  ['cpureadable_11',['cpuReadable',['../structTeaPacket_1_1Graphics_1_1TextureUseFlags.html#aedfeb86ce6554ad54def8c80a5d1e759',1,'TeaPacket::Graphics::TextureUseFlags']]]
+  ['converttexturetosupportedformat_9',['ConvertTextureToSupportedFormat',['../namespaceTeaPacket_1_1Graphics.html#ae2016bda6d1ad4e7dc5091926ea07568',1,'TeaPacket::Graphics']]],
+  ['core_2ehpp_10',['Core.hpp',['../Core_8hpp.html',1,'']]],
+  ['cpu_11',['CPU',['../namespaceTeaPacket_1_1Graphics.html#aa65ec3f6a0cf5637fc2e4ea85ca6d06aa2b55387dd066c5bac646ac61543d152d',1,'TeaPacket::Graphics']]],
+  ['cpureadable_12',['cpuReadable',['../structTeaPacket_1_1Graphics_1_1TextureUseFlags.html#aedfeb86ce6554ad54def8c80a5d1e759',1,'TeaPacket::Graphics::TextureUseFlags']]]
 ];
